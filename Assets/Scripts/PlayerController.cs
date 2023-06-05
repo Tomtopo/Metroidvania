@@ -50,6 +50,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Information
         playerVelocity = rb.velocity;
         _isGrounded = Physics2D.Raycast(transform.position, Vector2.down, distToGround + 0.1f, LayerMask.GetMask("Ground"));
         _isWalled = Physics2D.BoxCast(transform.position, new Vector2(1.2f, 1.8f), 0, new Vector2(0,0), 0, LayerMask.GetMask("Ground"));
@@ -113,7 +114,7 @@ public class PlayerController : MonoBehaviour
 
     public void Jump(InputAction.CallbackContext value)
     {
-        jumpVal = value.ReadValue<float>();
+        //jumpVal = value.ReadValue<float>();
 
     }
 
@@ -139,6 +140,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // Flip the character sprite.
     private void Flip()
     {
         //if (moveVal > 0f)
@@ -155,6 +157,7 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    // Is player facing a wall? If the player is crouching, shrink the box size accouring to the collider.
     private bool IsWalled()
     {
         if(_isCrouching)
@@ -177,6 +180,7 @@ public class PlayerController : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
+        // Draw wallcheck gizmos.
         if(_isCrouching)
             Gizmos.DrawWireCube(transform.position, new Vector3(1.2f, 1.1f, 0));
         else
