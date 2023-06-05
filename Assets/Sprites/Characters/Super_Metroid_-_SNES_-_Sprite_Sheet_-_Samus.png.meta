@@ -1,0 +1,6419 @@
+fileFormatVersion: 2
+guid: e97d453bab7e8a5418fcca1e2a436255
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 545
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f96046529b450c64aa55ebe6bdafcf09
+      internalID: 564902963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_1
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 545
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ada3dce645c0c634fb4267964c54a317
+      internalID: 1731919417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 545
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f194a97317e0a242bffd33e9fe44e4e
+      internalID: 1585653485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_3
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 545
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6a1c8138311fab46b172cbb514f4dba
+      internalID: -183249830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 545
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d9321f029beb043b4427eb10ec74fd
+      internalID: -132694501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_5
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 545
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7160369bc84df094b85bbde0da81a3f4
+      internalID: 60286109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_6
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 579
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f78a0f4a24e6b434d981fce2b02a97ef
+      internalID: 217562475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_7
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 565
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c4a25418f127624f8824619878c9636
+      internalID: -1783705783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_8
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 565
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95f09b1913670f340b02990c03bd5fc0
+      internalID: 1624414516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_9
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 565
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63f4bbb51fe78104db2fe25c96cc5024
+      internalID: 1059413071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_10
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 578
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f205b66ad0ada084ea08d6ece9f7bbe1
+      internalID: 856871878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_11
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 583
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 277b7fa367910a94db4822893c060fa8
+      internalID: -29626306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_12
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 580
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ecbb9803a5a54041b7db0289b9c294b
+      internalID: -1100792168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_13
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 583
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d47a587224497b4198347820867538b
+      internalID: 1799656243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_14
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 578
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d73d095492c5f3d47acbf67e00df8180
+      internalID: 1583625003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_15
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 568
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc17fec6f1e07984fb0f320528831223
+      internalID: -1858352287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_16
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 568
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5996454c7f49684ba5459ff1efddf94
+      internalID: 534573641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_17
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 569
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1db41b27295f651469af960525db0a45
+      internalID: 1072233859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_18
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 567
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a061a47f76fc8bc4784107fbd22a3930
+      internalID: 1248072771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_19
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 564
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b1bc1529243694bb30216d693e51fc
+      internalID: 545556902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_20
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 563
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84a3176fab36fbb4a8b21967c4ff14cb
+      internalID: -46078548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_21
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 563
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d74abc9417314945a7a03271788d390
+      internalID: 2084632075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_22
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 563
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd687f53b7f047349a300f01baae344c
+      internalID: -275955460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_23
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 565
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb40005b742fba4e9e09804f900e9da
+      internalID: 779897313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_24
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 561
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99e0197c7f2984343b6fbfdcc2ca77f2
+      internalID: 1195767241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_25
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 565
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b542ba09d184894cbaaf23b5b68a03a
+      internalID: 1061341053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_26
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 565
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f371feff0590e3946b45ec274fdf1dd0
+      internalID: 902266505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_27
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 565
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf6933ecc7eed45428db3b115d418cd5
+      internalID: -1717811425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_28
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 565
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6f1a23f9a4ff7142935430b023634a3
+      internalID: -840251833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_29
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 565
+        width: 23
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d36d6f41abdf343448be63f907b32149
+      internalID: -1772991209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_30
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 565
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9da2c5b40b89c084b9da6e82791b872c
+      internalID: -1074922187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_31
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 566
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c9b4d509989d044abef6506af2c3023
+      internalID: -198116452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_32
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 567
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e0ca1728a2156742a2130fb2e734b5e
+      internalID: 780634398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_33
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 555
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c645c31d91dca26439c43943db177c9c
+      internalID: -1688720841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_34
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 553
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f1bf35d0ec816b4aa4f81fa564cdab8
+      internalID: 866287471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_35
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 549
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48ad559220f0ade41b990f5ead8a8cdc
+      internalID: 1680349977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_36
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 558
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fdf5b58832c15a4f9f51ee974395ec9
+      internalID: 2101010512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_37
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 491
+        width: 37
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31637d3f9c6abe443a86b53809040265
+      internalID: 607285841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_38
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 546
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986d45a4343974d40a29b70134824603
+      internalID: 1952002245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_39
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 498
+        width: 47
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b45c12d78f5254e862e03ccc51f6ab
+      internalID: 1692216682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_40
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 505
+        width: 16
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e1b4d85fda5dfd48b20b148bff3139b
+      internalID: 527414714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_41
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 486
+        width: 49
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 433167cd6c4c65648b4b2472ecfe57c6
+      internalID: 1416071060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_42
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 489
+        width: 20
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7410bf9111c8c3c44b29dbabbcccc624
+      internalID: -1919060107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_43
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 489
+        width: 20
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1cb1db31c57114428ed600f2865c77a
+      internalID: 1439188045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_44
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 490
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f81fae999984d414a8e016cc69c11443
+      internalID: -1478969170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_45
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 492
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e2b49f3268bea541aaa247ee720f9e5
+      internalID: 1478233732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_46
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 539
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d203af6238c2ef546af4156c227ed82c
+      internalID: -564997066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_47
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 522
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abf5937a8493c2340a13f054dc870a8f
+      internalID: 1991301607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_48
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 489
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 974a45e8d4cb6b548bd5d58583295338
+      internalID: 1790633608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_49
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 489
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0398c99e22b0044281c2127db3428f7
+      internalID: 946028699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_50
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 489
+        width: 23
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d4b6a09fa365a4ab49bdbee8c67774
+      internalID: -731134296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_51
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 489
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 404cbb2aec345c54590926db0e2b2e60
+      internalID: -1343527269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_52
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 489
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce87d5b9b36507c4e95e1e70407c0cba
+      internalID: -1894384955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_53
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 489
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83322f83e3f1d61459eccec74e39c2fb
+      internalID: 89217179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_54
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 489
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26a9744b87232b946ac4eab47383539f
+      internalID: 1886947643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_55
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 489
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c841f2945107c654abb1121626ae6ad5
+      internalID: 1194854881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_56
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 489
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd7a6e087fc5cce4eb3ea2f2939fd59e
+      internalID: -601149295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_57
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 487
+        width: 18
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9370e57d647e377418f926c5c4a833d3
+      internalID: 1808686658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_58
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 487
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c654374c081cf02459d63ef63d90bf72
+      internalID: -468631082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_59
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 487
+        width: 22
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca09397cfdcb52c4fa5245cc5fd1f4a4
+      internalID: 647505405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_60
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 487
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 764601118951b154396cb8b6ea90f295
+      internalID: 1772374890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_61
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 487
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 410b6ae46af956a4292b3ae196ba860d
+      internalID: 2064155361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_62
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 489
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53b949ff8d1251b46b7051c982c30ec4
+      internalID: -834651601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_63
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 489
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45076b8c5ead37146a49b09ac96923a4
+      internalID: -176065389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_64
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 489
+        width: 20
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ead00a64931559445bc6520bc69f2e3b
+      internalID: -400943502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_65
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 492
+        width: 21
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f7ef7d076655a247be495b29ba2b7fe
+      internalID: -458141581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_66
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 492
+        width: 21
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf0d621c37799854ba53bd69de93d1d3
+      internalID: -648440986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_67
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 527
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c553438aed4201942a6dfc46b22979a0
+      internalID: 1643557987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_68
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 516
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f073ca1e2e147e34bac4c720d2fd5ecc
+      internalID: 1361214051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_69
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 486
+        width: 19
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67de28ade8b7a044d93c29f68b706d3f
+      internalID: 1344321649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_70
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 486
+        width: 19
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1c238c7e7dc8454ea3a14c099fa9576
+      internalID: 2054765555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_71
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 487
+        width: 18
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6dccd4b9d804064591b0c9f1418f196
+      internalID: -1856891922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_72
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 487
+        width: 19
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b13285a8a662a2b489f5a9b779c437df
+      internalID: -1741907966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_73
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 517
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a14db631511ae314ea3d0f0b1923d092
+      internalID: 670989856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_74
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 519
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 516a3984dca80af41864b7d5d05a08db
+      internalID: -1358078780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_75
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 489
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21961e9571405b045b90a25fdee375eb
+      internalID: 1898491921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_76
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 425
+        width: 18
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bd2c05da7b5b43428e32c1e2682b3e8
+      internalID: -2067523818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_77
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 425
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1822218e64e5b04cbeb3ad5fbf555b1
+      internalID: -1104212962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_78
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 425
+        width: 19
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc1961a2d26d02e468f0178c1237ebca
+      internalID: 933669357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_79
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 425
+        width: 19
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cad873b30c2ae7e4f8fa24a21e2c1138
+      internalID: -1390151034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_80
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 425
+        width: 18
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c80768ef94971044aa3e0a1ea882f88a
+      internalID: -997530059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_81
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 425
+        width: 22
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8898e928511a4f34baad8a07140582f8
+      internalID: -1284234485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_82
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 425
+        width: 19
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6456d4ae362005a408228e84f55821d6
+      internalID: -2080909142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_83
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 425
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82f03bcc8e26d4f4393f00bed9a5243d
+      internalID: -848818358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_84
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 425
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 217b7d2939cd2c44e926203a2ebce31b
+      internalID: 1789105565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_85
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 435
+        width: 18
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8fc1ee2571c41a4aa78409a23bd1213
+      internalID: 1285457660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_86
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 435
+        width: 18
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c76da8e9c2ed74494e0945b832ea6c
+      internalID: -233111138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_87
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 435
+        width: 18
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc7ba7633beee0c459b81a92a5994227
+      internalID: 774944484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_88
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 435
+        width: 18
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4b1f8b3db5a1c84d9d566159d079af2
+      internalID: -1351460119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_89
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 435
+        width: 19
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29218ff150c37d04b93087920c169789
+      internalID: -50818664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_90
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 435
+        width: 19
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 418678ea7e8ba3b4ebd90b83e4a6f31f
+      internalID: 1219272363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_91
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 435
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2351e2714d089c428c1a6f63d66ec93
+      internalID: -1757826356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_92
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 435
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e5c6ae466eaf7d4c872846885b1cfdf
+      internalID: 1362299990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_93
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 433
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4781be6a42a74064d8fb602b47af3246
+      internalID: -740252131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_94
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 433
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da35012867083cb4cb9b13ef81d07d10
+      internalID: 346806619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_95
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 433
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 497f5ed67fdddb144b73c6c4e6d3765d
+      internalID: 927531369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_96
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 432
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf1b67943e183e540a36d909daa12540
+      internalID: -990548406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_97
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 432
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 482682f8753293445992bb35d1f5f9c5
+      internalID: -193972873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_98
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 432
+        width: 18
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8222b88de1236254fa27fe4ed521e41f
+      internalID: 1134174752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_99
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 431
+        width: 20
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c7724c0f781fc4bbc7b6495200c99b
+      internalID: 1697509236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_100
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 432
+        width: 23
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ea0e8a07f4292641a4961fee2d50139
+      internalID: 1662219130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_101
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 434
+        width: 23
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02a0f10d0501e33479feeefb92277a46
+      internalID: -1386564398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_102
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 434
+        width: 29
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8111107a24743c499445de6d06072de
+      internalID: 7675217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_103
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 435
+        width: 29
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f752db060c9a54fa589383616a3aec
+      internalID: -640930696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_104
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 369
+        width: 20
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8562634b0a1c2f040abbe2cdc2721bb6
+      internalID: 2057626964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_105
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 369
+        width: 19
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09db728d4ea6e5e4d8e9888611cbef15
+      internalID: -1073699580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_106
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 369
+        width: 19
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e5b425a6fb29d4469466cf94ef67b19
+      internalID: 1485759718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_107
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 369
+        width: 18
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea6c8ef00d95426409bbae673445fe0f
+      internalID: 513475589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_108
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 369
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bec73f19c8d561044a8d30c1e4a7004d
+      internalID: -53445751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_109
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 369
+        width: 19
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e55fb54f05848af4389cba8784b913ea
+      internalID: 1277405361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_110
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 369
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13ee4de6e9ffdba46a8146aa6379caf3
+      internalID: -853927653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_111
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 368
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcfddf401b345ac48949c1aa64adc9c0
+      internalID: 1453460268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_112
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 368
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cae1105c439d82744ba2e8db2acfa833
+      internalID: 1792322318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_113
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 375
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e96528e0d7c044849b42bc1ef8b1ca8d
+      internalID: -1955257919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_114
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 385
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0511d0d0bb0a90449bf1df22b86181a9
+      internalID: 606237461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_115
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 385
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d6422ea93900ac47b8ae228df9e19bc
+      internalID: -30326642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_116
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 385
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ded2d04fe4cef849aacce7a39d86607
+      internalID: 42819585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_117
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 385
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86f9e69de9bc4e545a3511ca10a0656a
+      internalID: 846613950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_118
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 385
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffd36f112d989854991260bf4963a9b5
+      internalID: 753262896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_119
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 385
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 143783a389b92004bb39b5d041757e3f
+      internalID: 356107126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_120
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 385
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a898b406c947c54d8db9d3968153466
+      internalID: 1050317556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_121
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 385
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd9f36f7a8ce14e42bd21279c00b3d86
+      internalID: 867572555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_122
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 385
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae3c143b0b0188345aa83f834d925bff
+      internalID: -393461225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_123
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 385
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 920428ddd0f234d4eb374d49ee88de7b
+      internalID: -1816299104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_124
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 385
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac06c5a448f642d4f83c96e34adff2f2
+      internalID: -1407914071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_125
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 385
+        width: 22
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7607c6d36fb53145a892067d4802913
+      internalID: -1322478503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_126
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 385
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2691519c50c5c25459bedd57ecd3ecc7
+      internalID: -1245677216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_127
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 385
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18705b7a48a18d24c9f9cdb70194c6a5
+      internalID: -1766646203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_128
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 385
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6be3c92a2933e04b83486f0f5de84a6
+      internalID: 437793027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_129
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 385
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec4cd04cc9e521c4b91d12c33e53a5af
+      internalID: -435634106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_130
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 385
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7de5c76388d57594483b899b4b9d140d
+      internalID: 1347696019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_131
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 385
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e12bba499f3e7d469734f85403d088c
+      internalID: -905407341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_132
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 325
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2540dd6e648f5f24da1752f14b9d4ffd
+      internalID: 2076001961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_133
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 325
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6c825b7083e3324abc0a508a18fa34b
+      internalID: -191940274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_134
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 325
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fa10340fd7f9b4419b987e41055ec89
+      internalID: -1677832445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_135
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 325
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 757b3b88deddc7046b942073c07ada38
+      internalID: 1799576468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_136
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 325
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f12b424afe2bf948bb5c11fb3b25f05
+      internalID: 1881386081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_137
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 325
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78abcb2b41fe58e4f911b52d69c97eb3
+      internalID: 1661156090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_138
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 324
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb60766f7e91ae342b495081062a8635
+      internalID: -744535149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_139
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 325
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f487d8416edd114fb34f008ce2d2bfb
+      internalID: -18548709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_140
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 325
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fca3f36e649a2041b6aaee23021b3b9
+      internalID: 2107179449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_141
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 321
+        width: 23
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51675ccf7f9ff41449f931fe0bfb1b35
+      internalID: 1448481218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_142
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 321
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d60c88926ec69847a8751e2cc1245b7
+      internalID: 1190963471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_143
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 321
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c971529afe99f843997da6e98ab3e43
+      internalID: 141197982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_144
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 321
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c154d975b669896468d89c4036a4b048
+      internalID: 1583089498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_145
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 321
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fe54753a5224db4dbde84267d0df1ad
+      internalID: 1813026593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_146
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 321
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1817e8bb19aaff242a1024843311b450
+      internalID: -1142662971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_147
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 321
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1aec31a0cfc49046b89d0bb1d2331c0
+      internalID: 1681287507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_148
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 321
+        width: 29
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e41c781729d8d9247ae689a60a43b17e
+      internalID: -1783961033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_149
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 321
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1eb8e2aa5ea6344195d3a02e040a49a
+      internalID: 2057743962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_150
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 321
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a203c328900055546bb2fd24f43ee071
+      internalID: 522013066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_151
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 321
+        width: 19
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c40cbb17a45724f40bebf4fd55cd5b8a
+      internalID: 585185539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_152
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 321
+        width: 22
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aba9b643ea3287848bba2cca94e13f51
+      internalID: -1250069299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_153
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 321
+        width: 29
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1229b6a1aa4048e41b9910714acfb975
+      internalID: 790548806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_154
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 321
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e0203649645aba419999aed88c9e723
+      internalID: -324743642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_155
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 321
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61105a78479c4d346a41033b189a05a7
+      internalID: 820024437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_156
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 321
+        width: 18
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 601da5085854448408f354902c485c49
+      internalID: -1198332863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_157
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 321
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 497f28f1c64ce574da36a4b3142c9ace
+      internalID: -910874912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_158
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 265
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a48a799d4e200b64391c528e86e03f25
+      internalID: 1261385393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_159
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 265
+        width: 29
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe13117ec819d14bb3241160c47b876
+      internalID: 1007876483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_160
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 265
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b67eb9533358ba4db7a1d1ca19fd77f
+      internalID: -1750287263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_161
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 265
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6819f1d76f8e81141a7a64e9ba281c5f
+      internalID: -349092338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_162
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 265
+        width: 19
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7ef6069596f1e5499039a635afc196d
+      internalID: 879136602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_163
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 265
+        width: 22
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4673f6d1a461ee41beb4cafd3de9243
+      internalID: 651254648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_164
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 265
+        width: 29
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 426db245c58423f4eaea9586e2d05e7a
+      internalID: 1056325792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_165
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 265
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9522469eb3eda746b143e22e80f2f82
+      internalID: -814679919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_166
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 265
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26b9335de56304943a4214a47c8f1b0e
+      internalID: 9808332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_167
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 265
+        width: 18
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d228aa2f58788a14a82f82ab06c6522d
+      internalID: -1779502018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_168
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 257
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abbfc6a8f9d8e8b419afbdaab099e5fb
+      internalID: -773409485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_169
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 257
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee69e5d226ed5045889746b341d3ec8
+      internalID: 1480481165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_170
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 257
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a164e783ec2842441a3aa1854926865e
+      internalID: 1473075197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_171
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 253
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e033e8001038634f90f134c68b3b8b2
+      internalID: -567250442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_172
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 253
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 561edbc221ef7c649ba016685259d304
+      internalID: -1261470605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_173
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 253
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1c1c95700f592342b3a219d5a0e3983
+      internalID: 1549290532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_174
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 253
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff3e7c2b8585a624fa01c4338a705f98
+      internalID: 665945000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_175
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 253
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d54bd8595b11b0b4e98384e876c72bf5
+      internalID: 1972838397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_176
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 253
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abf1066cc70c5cf41b3e5e094f9429b9
+      internalID: -1257372625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_177
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 253
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd923bdef34676b4c8bb80639058af6c
+      internalID: -1223628619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_178
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 253
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f7b12fdf618c0d44b22c105620d3b7d
+      internalID: -1705259476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_179
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 253
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 818459df5ad7c0044902bab8dadc80ae
+      internalID: -2013979868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_180
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 253
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1d59b74d096b77438600afcee32719a
+      internalID: 1741703803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_181
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 253
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ff810bb47d85448b90482ed2ade512
+      internalID: -1701227441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_182
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 213
+        width: 23
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c206c08654194b749b680ae777a7ab80
+      internalID: -1901627621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_183
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 213
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9aaf29eefce91d4dac09b3b63f4298a
+      internalID: -814332830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_184
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 213
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28180d88cfcc82946b5e7f8e4b53d9b3
+      internalID: -140949236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_185
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 213
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9924de80036902d46b5276765f4235e9
+      internalID: 2135169902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_186
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 213
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 048451574b61da04b9de116258c88086
+      internalID: -1740825098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_187
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 213
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f97954b1120a6a489d589112adc5e91
+      internalID: 429298862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_188
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 213
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c63b6653068d222459e6e864968d7acd
+      internalID: 1932432716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_189
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 213
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79d8d406087bccf4eaee2aee769bda63
+      internalID: 793011818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_190
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 213
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7185ca268e9b1f046931f0f0553d4500
+      internalID: -2013795736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_191
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 213
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fc41acafc94820479846ae5182f6c65
+      internalID: 1190093151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_192
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 213
+        width: 30
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a17ab09fd64ad54182f9eba81a1a52d
+      internalID: -1664476419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_193
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 213
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6505cef978f7c5b4c92f9ca27220b5e2
+      internalID: -591010590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_194
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 209
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1187247dd48630d478f7596ad478c9dc
+      internalID: -1769123674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_195
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 209
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ae286ce8532154fa05214f57589bf1
+      internalID: -1286356568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_196
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 209
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 186067be5b3084f47af06304b533c71e
+      internalID: 2124024616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_197
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 193
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9a60fde84a5a5f4ea55b0257a905019
+      internalID: -1858656021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_198
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 193
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd5d20525275d842b9c57f09eca6444
+      internalID: -571029539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_199
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 193
+        width: 33
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e679bbab88a4c8459b1e5a019b129cd
+      internalID: 1289814937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_200
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 193
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e6d390115b60814f8d2350e7b1f61a0
+      internalID: -2007671173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_201
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 193
+        width: 34
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a5434da3ddc4ac4cbc2c7b9d860e0d1
+      internalID: -1674583339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_202
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 193
+        width: 27
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc2894b0780c3b47b64686e3d9fdd2e
+      internalID: -450838367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_203
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 193
+        width: 29
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4945fb7d6fcccf74b99007ba5e731aab
+      internalID: -964607368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_204
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 193
+        width: 33
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4b2b78a0d417374aabc4ef17529d42d
+      internalID: -787429326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_205
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 193
+        width: 36
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94f1bc8b22499454eaf0a83690ec99e4
+      internalID: 1244339656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_206
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 193
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cda6f990c148f2469b8da9a3c8c38df
+      internalID: -1288233508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_207
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 193
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bdef088d3d48724c8a2a6847726f109
+      internalID: 393466072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_208
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 193
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7cba411ffd02fc489f645d6c94ece3c
+      internalID: -1427812508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_209
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 149
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68365a177d6c784449961bf74f035fe8
+      internalID: 1366794345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_210
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 149
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 809b789e1afea1547840d1581f37dc78
+      internalID: -1350352517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_211
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 149
+        width: 25
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d59aa94149637fa48b1379e26a3bd796
+      internalID: -86225893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_212
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 149
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c163428703a543e4a85c7273c6c04811
+      internalID: -294021502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_213
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 149
+        width: 20
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d04d2b0396ccd4b82146333f941043
+      internalID: -1681342175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_214
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 149
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d665d4bafe4a00e4a8b55fe9d8326f80
+      internalID: 1795671129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_215
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 149
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea4eff7a5e181f4899ca2829a6ff7af
+      internalID: 854103606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_216
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 149
+        width: 20
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc55d143790bc641a3dfd766aec0fea
+      internalID: -1200825604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_217
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 149
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ac897c968390ee4a86c3fbe52c95d07
+      internalID: 168211452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_218
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 149
+        width: 22
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05cb149fdaaa3c4449c80aa2777715bd
+      internalID: -1989712162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_219
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 149
+        width: 22
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41d4162e0d1ebdd44aaecae9e98dbb9b
+      internalID: -33208450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_220
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 149
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86aacb4c98fb6bf4189b36e7e730b0d3
+      internalID: -1254149854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_221
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 149
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d9a2bdf66c8744458e95080ac682be1
+      internalID: 633051637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_222
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 149
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fbeff435d512964b840ae9a1f645e67
+      internalID: -1216647597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_223
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 149
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dab75194d79172745913c89312d842a6
+      internalID: 415471580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_224
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 149
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de067ef7c83d0354a89d89f2cb22e73c
+      internalID: -642665229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_225
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 137
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d96eb008c621234480fa511249c0164
+      internalID: -1039030384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_226
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 137
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1dee829a743338458f0c39f1de3761a
+      internalID: 2089244907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_227
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 137
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf64278de1a020f41aecf356fc240f86
+      internalID: 759158227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_228
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 137
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea4d21ded8f2924fae5fdda3c719cfb
+      internalID: 1098255465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_229
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 137
+        width: 29
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f058c28d90dbddb47b62beba58797b1e
+      internalID: -1798442508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_230
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 137
+        width: 33
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46fa9e568ab9a6f45b537d3185b10d1e
+      internalID: -218493379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_231
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 137
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 523a1ead675400d48a9d74b2bfa96f9d
+      internalID: 519882588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_232
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 137
+        width: 38
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06316f0b7f9a1d341b24906fef881db9
+      internalID: 451457964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_233
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 137
+        width: 37
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90ddc91d6cc9a3943bb65fb515830089
+      internalID: -2110441467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_234
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 133
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c629f8bc92dc57f4fa415fd9cd6d8311
+      internalID: 520033466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_235
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 81
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72fb9d81e5e01af4f8a76c5beafb16a3
+      internalID: -975494472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_236
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 81
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d7850fc8b8e5794499342c0b91d75fd
+      internalID: 884110172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_237
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 81
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d71160f0bf1c7243a289c58e388ddd4
+      internalID: -1222565245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_238
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 81
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4053c6b83890a4488a65392074b241f
+      internalID: -1493131626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_239
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 81
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2442bf8fcf57d942ae6cd4057b4cff5
+      internalID: -416170278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_240
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 81
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f877f2a88cb1f2419d52f4cbfd4dc61
+      internalID: -968566587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_241
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 81
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4d650ce9e0583048a1b42e0f6841e01
+      internalID: -870712790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_242
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 81
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 625794396b5d9f94f8f266f7d69d8737
+      internalID: 1084233062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_243
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 81
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d75a4bdece996c94fbac288aa2bee94c
+      internalID: 2039173148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_244
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 81
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9e56949f5f04964a9290010c308a46e
+      internalID: -216070379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_245
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 81
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1804bb66ac3e60b40bb2fa1e0dedb176
+      internalID: -2120485761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_246
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 81
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f730ac192949c614797fb94b46f51c0e
+      internalID: -1200998698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_247
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 85
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ef5555bcc1761b4ea114e7712fa15da
+      internalID: -1482638330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_248
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 84
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf38cad6367975545962c938aefc23a5
+      internalID: -1569376364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_249
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 85
+        width: 22
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc77096e57127b4d89e6508e57d694a
+      internalID: 374768700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_250
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 81
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 476ca1225430adb4d87ed012826db8ee
+      internalID: -1653472376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_251
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 81
+        width: 37
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa21845efbaa2824a8cf3e4cc708e2fb
+      internalID: 127597867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_252
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 81
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2330e8d1ed44084eb258c6529ec9922
+      internalID: -1214958007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_253
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 81
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e49f1f3edd5e7814dac7c8a7114745ee
+      internalID: -904624885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_254
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 81
+        width: 36
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cde535ae247dc841a903aa1f1dbaa7d
+      internalID: -1762658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_255
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 81
+        width: 39
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d11f8c829d3ab4d4789d3cadd7cae187
+      internalID: 942076422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_256
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 81
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b1b839b03e71b24fbe6bbc0b2a2e4b6
+      internalID: -466063144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_257
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 81
+        width: 29
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c86bd15a0538164ca632076ff2b6f99
+      internalID: -1536692428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_258
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 81
+        width: 33
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c3cd135862e37b4a99c1f024ee31c49
+      internalID: -1324403520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_259
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 81
+        width: 36
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd11077bea887374aa2aefc8d6f1502d
+      internalID: 1595543581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_260
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 81
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94250ef068be6084ca1f719e7d375c97
+      internalID: 1071746216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_261
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 25
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de96f2fa8ca34eb48a4ea91cf0991133
+      internalID: 1975937966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_262
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 25
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05de1768bd93cb14ab4c7a39fdccab20
+      internalID: -259226706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_263
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 25
+        width: 33
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a43c0b7d05d4c194daf18edc6b80d613
+      internalID: 954847533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_264
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 25
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c80fe0737c7d3647aa4f310ef38d4d3
+      internalID: 946752500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_265
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 25
+        width: 34
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f7e4927e9b42874bb91657efde6b482
+      internalID: -1776171476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_266
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 25
+        width: 27
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de7f95a212f39a3449201bff519976dc
+      internalID: -893935751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_267
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 25
+        width: 29
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5653a63895db6a740b55f358b773b5d4
+      internalID: 1448208499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_268
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 25
+        width: 33
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da5bfefdfd2c2a44da525ee302738fa0
+      internalID: -1869086153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_269
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 25
+        width: 36
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6c1151903a18b64cadab1d3888b2f32
+      internalID: 1260735805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_270
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 25
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9640d1074ce280f4ca87cddaa74f0bd4
+      internalID: -678083641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_271
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 25
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0f2b1ba26918bc44aa525899a3aa5cf
+      internalID: 536567750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_272
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 25
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec26edd5832617e44a8fcb4acc00b6b4
+      internalID: 269787878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_273
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 25
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a2d2e53235d874bbf3fc1d32c5f721
+      internalID: 2069037973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_274
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 25
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b7eafc439c27c843bc79120face96dd
+      internalID: -203901941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_275
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 25
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9ae82627c30d7643ae6be042f24783f
+      internalID: -370600659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_276
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 25
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 330232a0cb390694e9ea7b58b46f05dd
+      internalID: -399726794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_277
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 25
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d823de4f01fef64ebea41c5f16ff922
+      internalID: -818928963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_278
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 25
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6de29e1869d2a1547887bf6bc5eba43e
+      internalID: 1983291839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_279
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 25
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96119d5e52938654284ad653f014703e
+      internalID: 1063338757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_280
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 25
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5d6280b3d60f2c48a36fefd1b0c489b
+      internalID: -2085378130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_281
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 25
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fb9fd9e150ea194daeaebdbf1be8474
+      internalID: 1939429016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_282
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 25
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 799ee9310ca672343ad17d7e3d7f7701
+      internalID: -447075441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_283
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 25
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e7d3baa3d789e646bbb6b05e6c5b09c
+      internalID: 843281672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_284
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 25
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51c9a05135415d440b80120f300d7573
+      internalID: 1856368737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_285
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 6
+        width: 240
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1896796465e7991479120e2b228c736f
+      internalID: -1417720886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_0: 564902963
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_1: 1731919417
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_10: 856871878
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_100: 1662219130
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_101: -1386564398
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_102: 7675217
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_103: -640930696
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_104: 2057626964
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_105: -1073699580
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_106: 1485759718
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_107: 513475589
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_108: -53445751
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_109: 1277405361
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_11: -29626306
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_110: -853927653
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_111: 1453460268
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_112: 1792322318
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_113: -1955257919
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_114: 606237461
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_115: -30326642
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_116: 42819585
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_117: 846613950
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_118: 753262896
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_119: 356107126
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_12: -1100792168
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_120: 1050317556
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_121: 867572555
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_122: -393461225
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_123: -1816299104
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_124: -1407914071
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_125: -1322478503
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_126: -1245677216
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_127: -1766646203
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_128: 437793027
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_129: -435634106
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_13: 1799656243
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_130: 1347696019
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_131: -905407341
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_132: 2076001961
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_133: -191940274
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_134: -1677832445
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_135: 1799576468
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_136: 1881386081
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_137: 1661156090
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_138: -744535149
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_139: -18548709
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_14: 1583625003
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_140: 2107179449
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_141: 1448481218
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_142: 1190963471
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_143: 141197982
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_144: 1583089498
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_145: 1813026593
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_146: -1142662971
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_147: 1681287507
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_148: -1783961033
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_149: 2057743962
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_15: -1858352287
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_150: 522013066
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_151: 585185539
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_152: -1250069299
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_153: 790548806
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_154: -324743642
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_155: 820024437
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_156: -1198332863
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_157: -910874912
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_158: 1261385393
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_159: 1007876483
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_16: 534573641
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_160: -1750287263
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_161: -349092338
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_162: 879136602
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_163: 651254648
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_164: 1056325792
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_165: -814679919
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_166: 9808332
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_167: -1779502018
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_168: -773409485
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_169: 1480481165
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_17: 1072233859
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_170: 1473075197
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_171: -567250442
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_172: -1261470605
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_173: 1549290532
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_174: 665945000
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_175: 1972838397
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_176: -1257372625
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_177: -1223628619
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_178: -1705259476
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_179: -2013979868
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_18: 1248072771
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_180: 1741703803
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_181: -1701227441
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_182: -1901627621
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_183: -814332830
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_184: -140949236
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_185: 2135169902
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_186: -1740825098
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_187: 429298862
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_188: 1932432716
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_189: 793011818
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_19: 545556902
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_190: -2013795736
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_191: 1190093151
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_192: -1664476419
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_193: -591010590
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_194: -1769123674
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_195: -1286356568
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_196: 2124024616
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_197: -1858656021
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_198: -571029539
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_199: 1289814937
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_2: 1585653485
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_20: -46078548
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_200: -2007671173
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_201: -1674583339
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_202: -450838367
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_203: -964607368
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_204: -787429326
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_205: 1244339656
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_206: -1288233508
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_207: 393466072
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_208: -1427812508
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_209: 1366794345
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_21: 2084632075
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_210: -1350352517
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_211: -86225893
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_212: -294021502
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_213: -1681342175
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_214: 1795671129
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_215: 854103606
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_216: -1200825604
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_217: 168211452
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_218: -1989712162
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_219: -33208450
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_22: -275955460
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_220: -1254149854
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_221: 633051637
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_222: -1216647597
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_223: 415471580
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_224: -642665229
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_225: -1039030384
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_226: 2089244907
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_227: 759158227
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_228: 1098255465
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_229: -1798442508
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_23: 779897313
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_230: -218493379
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_231: 519882588
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_232: 451457964
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_233: -2110441467
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_234: 520033466
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_235: -975494472
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_236: 884110172
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_237: -1222565245
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_238: -1493131626
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_239: -416170278
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_24: 1195767241
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_240: -968566587
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_241: -870712790
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_242: 1084233062
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_243: 2039173148
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_244: -216070379
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_245: -2120485761
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_246: -1200998698
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_247: -1482638330
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_248: -1569376364
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_249: 374768700
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_25: 1061341053
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_250: -1653472376
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_251: 127597867
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_252: -1214958007
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_253: -904624885
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_254: -1762658
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_255: 942076422
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_256: -466063144
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_257: -1536692428
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_258: -1324403520
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_259: 1595543581
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_26: 902266505
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_260: 1071746216
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_261: 1975937966
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_262: -259226706
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_263: 954847533
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_264: 946752500
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_265: -1776171476
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_266: -893935751
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_267: 1448208499
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_268: -1869086153
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_269: 1260735805
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_27: -1717811425
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_270: -678083641
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_271: 536567750
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_272: 269787878
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_273: 2069037973
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_274: -203901941
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_275: -370600659
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_276: -399726794
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_277: -818928963
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_278: 1983291839
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_279: 1063338757
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_28: -840251833
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_280: -2085378130
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_281: 1939429016
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_282: -447075441
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_283: 843281672
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_284: 1856368737
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_285: -1417720886
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_29: -1772991209
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_3: -183249830
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_30: -1074922187
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_31: -198116452
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_32: 780634398
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_33: -1688720841
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_34: 866287471
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_35: 1680349977
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_36: 2101010512
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_37: 607285841
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_38: 1952002245
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_39: 1692216682
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_4: -132694501
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_40: 527414714
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_41: 1416071060
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_42: -1919060107
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_43: 1439188045
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_44: -1478969170
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_45: 1478233732
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_46: -564997066
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_47: 1991301607
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_48: 1790633608
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_49: 946028699
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_5: 60286109
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_50: -731134296
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_51: -1343527269
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_52: -1894384955
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_53: 89217179
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_54: 1886947643
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_55: 1194854881
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_56: -601149295
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_57: 1808686658
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_58: -468631082
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_59: 647505405
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_6: 217562475
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_60: 1772374890
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_61: 2064155361
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_62: -834651601
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_63: -176065389
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_64: -400943502
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_65: -458141581
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_66: -648440986
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_67: 1643557987
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_68: 1361214051
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_69: 1344321649
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_7: -1783705783
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_70: 2054765555
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_71: -1856891922
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_72: -1741907966
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_73: 670989856
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_74: -1358078780
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_75: 1898491921
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_76: -2067523818
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_77: -1104212962
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_78: 933669357
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_79: -1390151034
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_8: 1624414516
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_80: -997530059
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_81: -1284234485
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_82: -2080909142
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_83: -848818358
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_84: 1789105565
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_85: 1285457660
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_86: -233111138
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_87: 774944484
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_88: -1351460119
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_89: -50818664
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_9: 1059413071
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_90: 1219272363
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_91: -1757826356
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_92: 1362299990
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_93: -740252131
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_94: 346806619
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_95: 927531369
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_96: -990548406
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_97: -193972873
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_98: 1134174752
+      Super_Metroid_-_SNES_-_Sprite_Sheet_-_Samus_99: 1697509236
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
