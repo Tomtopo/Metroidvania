@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private BoxCollider2D playerCollider;
     private SpriteRenderer _spriteRenderer;
-    PlayerInputActions inputAction;
+    public PlayerInputActions inputAction;
 
     [SerializeField] private float speed = 10f;
     [SerializeField] private float jumpForce = 1f;
@@ -30,7 +30,6 @@ public class PlayerController : MonoBehaviour
     public float jumpVal;
     public float crouchVal;
 
-    [SerializeField]private bool isJumping = false;
     private void Awake()
     {
         inputAction = new PlayerInputActions();
@@ -63,12 +62,10 @@ public class PlayerController : MonoBehaviour
         if (IsGrounded())
         {
             coyoteTimeCounter = coyoteTime;
-            isJumping = false;
         }
         else
         {
             coyoteTimeCounter -= Time.deltaTime;
-            isJumping = true;
         }
 
         if(!IsWalled())
@@ -147,7 +144,7 @@ public class PlayerController : MonoBehaviour
         //    _spriteRenderer.flipX = false;
         //else if (moveVal < 0f)
         //    _spriteRenderer.flipX = true;
-        if(moveVal > 0f || moveVal < 0f)
+        if(moveVal != 0f)
             transform.localScale = new Vector2(moveVal, transform.localScale.y);
     }
 

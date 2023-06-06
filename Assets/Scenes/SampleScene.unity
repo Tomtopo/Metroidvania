@@ -244,7 +244,6 @@ MonoBehaviour:
   moveVal: 0
   jumpVal: 0
   crouchVal: 0
-  isJumping: 1
 --- !u!4 &239515435
 Transform:
   m_ObjectHideFlags: 0
@@ -396,6 +395,54 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 97eb1aea-0296-4337-b228-3455b805f11b
     m_ActionName: Movement/Shoot[/Keyboard/k]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 239515440}
+        m_TargetAssemblyTypeName: PlayerWeapon, Assembly-CSharp
+        m_MethodName: AimUpCorner
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: d8f7da5a-ca2b-4f75-bb44-96c8302a3d2b
+    m_ActionName: Movement/AimUp[/Keyboard/w,/XInputControllerWindows/rightShoulder,/DualShock4GamepadHID/rightShoulder]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 239515440}
+        m_TargetAssemblyTypeName: PlayerWeapon, Assembly-CSharp
+        m_MethodName: AimUp
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 09ad6423-e153-47da-b6ce-5c657a322179
+    m_ActionName: Movement/AimUpCorner[/Keyboard/k,/XInputControllerWindows/dpad/up,/DualShock4GamepadHID/dpad/up,/XInputControllerWindows/leftStick/up,/DualShock4GamepadHID/leftStick/up]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 239515440}
+        m_TargetAssemblyTypeName: PlayerWeapon, Assembly-CSharp
+        m_MethodName: TurretMode
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 7f4eefa2-20de-4089-97fd-47447157fbad
+    m_ActionName: Movement/TurretMode[/Keyboard/k,/XInputControllerWindows/rightShoulder,/DualShock4GamepadHID/rightShoulder]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Movement
@@ -496,6 +543,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _projectile: {fileID: 1285545725792162029, guid: fc64bb0b020b623408974267967104fb, type: 3}
+  isAimingUp: 0
+  isAimingUpCorner: 0
+  _shootCooldown: 0.4
+  turretModeVal: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
