@@ -61,12 +61,12 @@
                 },
                 {
                     "name": "AimUp",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "09ad6423-e153-47da-b6ce-5c657a322179",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 },
                 {
                     "name": "TurretMode",
@@ -278,7 +278,7 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "modifier",
+                    "name": "Modifier",
                     "id": "2f515b92-a3c9-4a4d-b8bc-5d0515d074cb",
                     "path": "<Keyboard>/w",
                     "interactions": "",
@@ -302,7 +302,7 @@
                 {
                     "name": "Button With One Modifier",
                     "id": "67da0e94-91fd-4390-b8f5-04ad455126c4",
-                    "path": "ButtonWithOneModifier",
+                    "path": "ButtonWithOneModifier(overrideModifiersNeedToBePressedFirst=true)",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

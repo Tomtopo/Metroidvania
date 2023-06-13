@@ -14,11 +14,14 @@ public class PlayerWeapon : MonoBehaviour
 
     public bool isAimingUp = false;
     public bool isAimingUpCorner = false;
+    public bool turretModeEnabled = false;
 
     public float _shootCooldown;
     private float _shootCooldownCounter;
 
-    [SerializeField] private float turretModeVal;
+    public float turretModeVal;
+    public float aimingVal;
+    public float aimingUpCornerVal;
 
     private void Start()
     {
@@ -27,29 +30,44 @@ public class PlayerWeapon : MonoBehaviour
         pi = GetComponent<PlayerInput>();
     }
 
+
+
     // Update is called once per frame
     void Update()
     {
         _shootCooldownCounter -= Time.deltaTime;
+
+        if (aimingVal != 0f)
+            isAimingUp = true;
+        else
+            isAimingUp = false;
+
+        if (aimingUpCornerVal != 0f || (_playerController.moveVal != 0 && isAimingUp))
+        {
+            isAimingUpCorner = true;
+            isAimingUp = false;
+        }
+        else
+            isAimingUpCorner = false;
     }
 
     public void InstantiateProjectile(InputAction.CallbackContext value)
     {
         if (_shootCooldownCounter <= 0f && !isAimingUp && !isAimingUpCorner)
         {
-            Debug.Log("ShootDefault");
+            //Debug.Log("ShootDefault");
             Instantiate(_projectile, new Vector2(transform.position.x + transform.localScale.x, transform.position.y + 0.3f), Quaternion.identity);
             _shootCooldownCounter = _shootCooldown;
         }
         else if (_shootCooldownCounter <= 0f && isAimingUpCorner)
         {
-            Debug.Log("ShootUpCorner");
+            //Debug.Log("ShootUpCorner");
             Instantiate(_projectile, new Vector2(transform.position.x + transform.localScale.x, transform.position.y + 1.5f), Quaternion.identity);
             _shootCooldownCounter = _shootCooldown;
         }
-        else if(_shootCooldownCounter <= 0f && isAimingUp && !isAimingUpCorner)
+        else if(_shootCooldownCounter <= 0f && isAimingUp)
         {
-            Debug.Log("ShootUp");
+            //Debug.Log("ShootUp");
             Instantiate(_projectile, new Vector2(transform.position.x, transform.position.y + 2f), Quaternion.identity);
             _shootCooldownCounter = _shootCooldown;
         }
@@ -58,34 +76,29 @@ public class PlayerWeapon : MonoBehaviour
 
     public void AimUp(InputAction.CallbackContext value)
     {
-        float aimingVal = value.ReadValue<float>();
-        if (aimingVal != 0f)
-            isAimingUp = true;
-        else
-            isAimingUp = false;
+        aimingVal = value.ReadValue<float>();
+
     }
+
 
     public void AimUpCorner(InputAction.CallbackContext value)
     {
-        float aimingUpCornerVal = value.ReadValue<float>();
-        if (aimingUpCornerVal != 0f)
-            isAimingUpCorner = true;
-        else
-            isAimingUpCorner = false;
+        aimingUpCornerVal = value.ReadValue<float>();
+
     }
 
     public void TurretMode(InputAction.CallbackContext value)
     {
         turretModeVal = value.ReadValue<float>();
-        if (turretModeVal == 1f)
-        {
-            Debug.Log("input disabled");
-            pi.actions.FindAction("Move").Disable();
-        }
-        else
-        {
-            Debug.Log("input enabled");
-            pi.actions.FindAction("Move").Enable();
-        }
+        //if (turretModeVal == 1f)
+        //{
+        //    Debug.Log("input disabled");
+        //    turretModeEnabled = true;
+        //}
+        //else
+        //{
+        //    Debug.Log("input enabled");
+        //    turretModeEnabled = false;
+        //}
     }
 }

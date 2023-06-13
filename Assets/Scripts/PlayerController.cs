@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     private BoxCollider2D playerCollider;
     private SpriteRenderer _spriteRenderer;
     public PlayerInputActions inputAction;
+    private PlayerWeapon _weapon;
 
     [SerializeField] private float speed = 10f;
     [SerializeField] private float jumpForce = 1f;
@@ -19,6 +20,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private float maxVelocity;
     [SerializeField] private Vector2 playerVelocity;
+    [SerializeField] private Vector2 _wallCheck = new Vector2(1.2f, 2.5f);
 
     private float coyoteTime = 0.2f;
     [SerializeField] private float coyoteTimeCounter;
@@ -44,6 +46,7 @@ public class PlayerController : MonoBehaviour
         playerCollider = gameObject.GetComponent<BoxCollider2D>();
         _spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         distToGround = playerCollider.bounds.extents.y;
+        _weapon = GetComponent<PlayerWeapon>();
     }
 
     // Update is called once per frame
@@ -68,7 +71,7 @@ public class PlayerController : MonoBehaviour
             coyoteTimeCounter -= Time.deltaTime;
         }
 
-        if(!IsWalled())
+        if(!IsWalled() && _weapon.turretModeVal == 0)
             rb.velocity = new Vector2(moveVal * speed, rb.velocity.y);
 
     }
@@ -158,9 +161,9 @@ public class PlayerController : MonoBehaviour
     private bool IsWalled()
     {
         if(_isCrouching)
-            return Physics2D.BoxCast(transform.position, new Vector2(1.2f, 1.1f), 0, new Vector2(0, 0), 0, LayerMask.GetMask("Ground"));
+            return Physics2D.BoxCast(transform.position, new Vector2(_wallCheck.x, 1.1f), 0, new Vector2(0, 0), 0, LayerMask.GetMask("Ground"));
         else
-            return Physics2D.BoxCast(transform.position, new Vector2(1.2f, 2.5f), 0, new Vector2(0, 0), 0, LayerMask.GetMask("Ground"));
+            return Physics2D.BoxCast(transform.position, _wallCheck, 0, new Vector2(0, 0), 0, LayerMask.GetMask("Ground"));
     }
 
     private void OnEnable()
@@ -179,9 +182,9 @@ public class PlayerController : MonoBehaviour
         Gizmos.color = Color.yellow;
         // Draw wallcheck gizmos.
         if(_isCrouching)
-            Gizmos.DrawWireCube(transform.position, new Vector3(1.2f, 1.1f, 0));
+            Gizmos.DrawWireCube(transform.position, new Vector3(_wallCheck.x, 1.1f, 0));
         else
-            Gizmos.DrawWireCube(transform.position, new Vector3(1.2f, 2.5f, 0));
+            Gizmos.DrawWireCube(transform.position, new Vector3(_wallCheck.x, _wallCheck.y, 0));
     }
 
 }
