@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer _spriteRenderer;
     public PlayerInputActions inputAction;
     private PlayerWeapon _weapon;
+    private PlayerHealth _health;
 
     [SerializeField] private float speed = 10f;
     [SerializeField] private float jumpForce = 1f;
@@ -47,11 +48,13 @@ public class PlayerController : MonoBehaviour
         _spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         distToGround = playerCollider.bounds.extents.y;
         _weapon = GetComponent<PlayerWeapon>();
+        _health = GetComponent<PlayerHealth>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         // Information
         playerVelocity = rb.velocity;
         _isGrounded = Physics2D.Raycast(transform.position, Vector2.down, distToGround + 0.1f, LayerMask.GetMask("Ground"));
@@ -75,6 +78,11 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector2(moveVal * speed, rb.velocity.y);
 
     }
+
+    //private void OnGUI()
+    //{
+    //    GUI.Label(new Rect(0, 0, 80, 50), "Health: " + _health.health, "box");
+    //}
 
     // First frame of the jump.
     private void Jump_started(InputAction.CallbackContext obj)

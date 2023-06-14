@@ -56,19 +56,19 @@ public class PlayerWeapon : MonoBehaviour
         if (_shootCooldownCounter <= 0f && !isAimingUp && !isAimingUpCorner)
         {
             //Debug.Log("ShootDefault");
-            Instantiate(_projectile, new Vector2(transform.position.x + transform.localScale.x, transform.position.y + 0.3f), Quaternion.identity);
+            Instantiate(_projectile, new Vector2(transform.position.x + transform.localScale.x, transform.position.y + 0.2f), Quaternion.identity);
             _shootCooldownCounter = _shootCooldown;
         }
         else if (_shootCooldownCounter <= 0f && isAimingUpCorner)
         {
             //Debug.Log("ShootUpCorner");
-            Instantiate(_projectile, new Vector2(transform.position.x + transform.localScale.x, transform.position.y + 1.5f), Quaternion.identity);
+            Instantiate(_projectile, new Vector2(transform.position.x + transform.localScale.x, transform.position.y + 1.3f), Quaternion.identity);
             _shootCooldownCounter = _shootCooldown;
         }
         else if(_shootCooldownCounter <= 0f && isAimingUp)
         {
             //Debug.Log("ShootUp");
-            Instantiate(_projectile, new Vector2(transform.position.x, transform.position.y + 2f), Quaternion.identity);
+            Instantiate(_projectile, new Vector2(transform.position.x, transform.position.y + 1.5f), Quaternion.identity);
             _shootCooldownCounter = _shootCooldown;
         }
 
