@@ -13,8 +13,11 @@ public class PlayerController : MonoBehaviour
     private PlayerWeapon _weapon;
     private PlayerHealth _health;
 
-    [SerializeField] private float speed = 10f;
+    [SerializeField] private float maxSpeed = 10f;
+    [SerializeField] private float speedCounter;
     [SerializeField] private float jumpForce = 1f;
+    [SerializeField] private float _accelerationOnGround = 50f;
+    [SerializeField] private float _accelerationInAir = 10f;
     [SerializeField] private bool _isGrounded;
     [SerializeField] private bool _isWalled;
     [SerializeField] private bool _isCrouching = false;
@@ -74,8 +77,11 @@ public class PlayerController : MonoBehaviour
             coyoteTimeCounter -= Time.deltaTime;
         }
 
-        if(!IsWalled() && _weapon.turretModeVal == 0)
-            rb.velocity = new Vector2(moveVal * speed, rb.velocity.y);
+        Acceleration();
+
+        if (!IsWalled() && _weapon.turretModeVal == 0)
+            //rb.velocity = new Vector2(moveVal * speed, rb.velocity.y);
+            transform.Translate(new Vector2(speedCounter * Time.deltaTime, 0), Space.World);
 
     }
 
@@ -88,6 +94,10 @@ public class PlayerController : MonoBehaviour
     private void Jump_started(InputAction.CallbackContext obj)
     {
         jumpBufferCounter = jumpBufferTime;
+        playerCollider.size = new Vector2(1.2f, 2.7f);
+        maxSpeed = 10f;
+        //inputAction.Movement.Jump.Enable();
+        _isCrouching = false;
     }
 
     // Frames during the jump.
@@ -132,8 +142,8 @@ public class PlayerController : MonoBehaviour
         if(!_isCrouching)
         {
             playerCollider.size = new Vector2(1.2f, 1.35f);
-            speed = 5f;
-            inputAction.Movement.Jump.Disable();
+            maxSpeed = 5f;
+            //inputAction.Movement.Jump.Disable();
             _isCrouching = true;
         }
     }
@@ -142,9 +152,71 @@ public class PlayerController : MonoBehaviour
         if(_isCrouching)
         {
             playerCollider.size = new Vector2(1.2f, 2.7f);
-            speed = 10f;
-            inputAction.Movement.Jump.Enable();
+            maxSpeed = 10f;
+            //inputAction.Movement.Jump.Enable();
             _isCrouching = false;
+        }
+    }
+
+    private void Acceleration()
+    {
+        if(IsGrounded())
+        {
+            if (moveVal == 1)
+            {
+                speedCounter += Time.deltaTime * _accelerationOnGround;
+            }
+            else if (moveVal == -1)
+                speedCounter -= Time.deltaTime * _accelerationOnGround;
+            else if (moveVal == 0)
+            {
+                if (speedCounter > 0)
+                {
+                    speedCounter -= Time.deltaTime * _accelerationOnGround;
+                    if (speedCounter < 0)
+                        speedCounter = 0;
+                }
+                else if (speedCounter < 0)
+                {
+                    speedCounter += Time.deltaTime * _accelerationOnGround;
+                    if (speedCounter > 0)
+                        speedCounter = 0;
+                }
+
+            }
+            if (speedCounter > maxSpeed)
+                speedCounter = maxSpeed;
+            else if (speedCounter < -maxSpeed)
+                speedCounter = -maxSpeed;
+        }
+        else
+        {
+            if (moveVal == 1)
+            {
+                speedCounter += Time.deltaTime * _accelerationInAir;
+            }
+            else if (moveVal == -1)
+                speedCounter -= Time.deltaTime * _accelerationInAir;
+            else if (moveVal == 0)
+            {
+                if (speedCounter > 0)
+                {
+                    speedCounter -= Time.deltaTime * _accelerationInAir;
+                    if (speedCounter < 0)
+                        speedCounter = 0;
+                }
+                else if (speedCounter < 0)
+                {
+                    speedCounter += Time.deltaTime * _accelerationInAir;
+                    if (speedCounter > 0)
+                        speedCounter = 0;
+                }
+
+            }
+            if (speedCounter > maxSpeed)
+                speedCounter = maxSpeed;
+            else if (speedCounter < -maxSpeed)
+                speedCounter = -maxSpeed;
         }
     }
 
