@@ -7,14 +7,19 @@ public class PlayerHealth : MonoBehaviour
     private SpriteRenderer _spriteRenderer;
     public float health;
     public bool invincibilityFrames = false;
+    private Rigidbody2D _rb;
+    public GameObject _lastDamageSource;
+    public float damageForce;
 
     private void Start()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
+        _rb = GetComponent<Rigidbody2D>();
     }
 
-    public void TakeDamage(float dmgAmount)
+    public void TakeDamage(float dmgAmount, GameObject damageSource)
     {
+        _lastDamageSource = damageSource;
         if (!invincibilityFrames)
         {
             health -= dmgAmount;
@@ -39,8 +44,8 @@ public class PlayerHealth : MonoBehaviour
 
     private IEnumerator Damaged()
     {
+        _rb.AddForce((gameObject.transform.position - _lastDamageSource.transform.position).normalized * damageForce, ForceMode2D.Impulse);
         invincibilityFrames = true;
-        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Enemy"), LayerMask.NameToLayer("Player"));
         for (int i = 0; i < 5; i++)
         {
             _spriteRenderer.enabled = false;
@@ -49,6 +54,5 @@ public class PlayerHealth : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
         }
         invincibilityFrames = false;
-        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Enemy"), LayerMask.NameToLayer("Player"), false);
     }
 }

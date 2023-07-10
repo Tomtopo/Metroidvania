@@ -55,6 +55,15 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
+                    ""name"": ""Crawl"",
+                    ""type"": ""Button"",
+                    ""id"": ""ac58acdd-48e2-4f83-9c9e-636a9092918c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
                     ""name"": ""StandUp"",
                     ""type"": ""Button"",
                     ""id"": ""5971f864-8f58-4066-a158-e254d59347d4"",
@@ -474,6 +483,28 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""action"": ""TurretMode"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""61297e45-5490-40a1-925d-a6ebe5434c2a"",
+                    ""path"": ""<Gamepad>/dpad/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Crawl"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3d9d7031-a0b4-4800-bfaf-194b4076aa43"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Crawl"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -513,6 +544,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         m_Movement_Move = m_Movement.FindAction("Move", throwIfNotFound: true);
         m_Movement_Jump = m_Movement.FindAction("Jump", throwIfNotFound: true);
         m_Movement_Crouch = m_Movement.FindAction("Crouch", throwIfNotFound: true);
+        m_Movement_Crawl = m_Movement.FindAction("Crawl", throwIfNotFound: true);
         m_Movement_StandUp = m_Movement.FindAction("StandUp", throwIfNotFound: true);
         m_Movement_Shoot = m_Movement.FindAction("Shoot", throwIfNotFound: true);
         m_Movement_AimUpCorner = m_Movement.FindAction("AimUpCorner", throwIfNotFound: true);
@@ -585,6 +617,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Movement_Move;
     private readonly InputAction m_Movement_Jump;
     private readonly InputAction m_Movement_Crouch;
+    private readonly InputAction m_Movement_Crawl;
     private readonly InputAction m_Movement_StandUp;
     private readonly InputAction m_Movement_Shoot;
     private readonly InputAction m_Movement_AimUpCorner;
@@ -597,6 +630,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         public InputAction @Move => m_Wrapper.m_Movement_Move;
         public InputAction @Jump => m_Wrapper.m_Movement_Jump;
         public InputAction @Crouch => m_Wrapper.m_Movement_Crouch;
+        public InputAction @Crawl => m_Wrapper.m_Movement_Crawl;
         public InputAction @StandUp => m_Wrapper.m_Movement_StandUp;
         public InputAction @Shoot => m_Wrapper.m_Movement_Shoot;
         public InputAction @AimUpCorner => m_Wrapper.m_Movement_AimUpCorner;
@@ -620,6 +654,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Crouch.started += instance.OnCrouch;
             @Crouch.performed += instance.OnCrouch;
             @Crouch.canceled += instance.OnCrouch;
+            @Crawl.started += instance.OnCrawl;
+            @Crawl.performed += instance.OnCrawl;
+            @Crawl.canceled += instance.OnCrawl;
             @StandUp.started += instance.OnStandUp;
             @StandUp.performed += instance.OnStandUp;
             @StandUp.canceled += instance.OnStandUp;
@@ -648,6 +685,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Crouch.started -= instance.OnCrouch;
             @Crouch.performed -= instance.OnCrouch;
             @Crouch.canceled -= instance.OnCrouch;
+            @Crawl.started -= instance.OnCrawl;
+            @Crawl.performed -= instance.OnCrawl;
+            @Crawl.canceled -= instance.OnCrawl;
             @StandUp.started -= instance.OnStandUp;
             @StandUp.performed -= instance.OnStandUp;
             @StandUp.canceled -= instance.OnStandUp;
@@ -731,6 +771,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         void OnMove(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnCrouch(InputAction.CallbackContext context);
+        void OnCrawl(InputAction.CallbackContext context);
         void OnStandUp(InputAction.CallbackContext context);
         void OnShoot(InputAction.CallbackContext context);
         void OnAimUpCorner(InputAction.CallbackContext context);

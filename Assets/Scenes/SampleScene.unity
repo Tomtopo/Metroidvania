@@ -179,6 +179,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2424425683079104995, guid: 2c0f0b4781af9eb46965247c901d8c4b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -376,7 +380,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.17, y: 0.01}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -387,7 +391,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2, y: 2.7}
+  m_Size: {x: 1, y: 2.7}
   m_EdgeRadius: 0
 --- !u!50 &239515432
 Rigidbody2D:
@@ -431,14 +435,16 @@ MonoBehaviour:
   maxSpeed: 12
   speedCounter: 0
   jumpForce: 25
-  _accelerationOnGround: 50
-  _accelerationInAir: 20
+  _accelerationOnGround: 60
+  _accelerationInAir: 40
   _isGrounded: 0
   _isWalled: 0
   _isCrouching: 0
+  _isCrawling: 0
   maxVelocity: 13
   playerVelocity: {x: 0, y: 0}
-  _wallCheck: {x: 1.2, y: 2.65}
+  _wallCheck: {x: 0.36, y: 2.65}
+  _wallCheckOffset: {x: 0.39, y: 0}
   coyoteTimeCounter: 0
   jumpBufferCounter: 0
   distToGround: 0
@@ -584,22 +590,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 239515440}
         m_TargetAssemblyTypeName: PlayerWeapon, Assembly-CSharp
-        m_MethodName: InstantiateProjectile
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 97eb1aea-0296-4337-b228-3455b805f11b
-    m_ActionName: Movement/Shoot[/Keyboard/k]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 239515440}
-        m_TargetAssemblyTypeName: PlayerWeapon, Assembly-CSharp
         m_MethodName: AimUpCorner
         m_Mode: 0
         m_Arguments:
@@ -644,6 +634,26 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 7f4eefa2-20de-4089-97fd-47447157fbad
     m_ActionName: Movement/TurretMode[/Keyboard/k,/XInputControllerWindows/rightShoulder,/DualShock4GamepadHID/rightShoulder]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 239515433}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: Crawl
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: ac58acdd-48e2-4f83-9c9e-636a9092918c
+    m_ActionName: Movement/Crawl[/Keyboard/s]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 97eb1aea-0296-4337-b228-3455b805f11b
+    m_ActionName: Movement/Shoot[/Keyboard/j]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Movement
@@ -765,6 +775,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   invincibilityFrames: 0
+  _lastDamageSource: {fileID: 0}
+  damageForce: 10
 --- !u!1001 &417787730
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -820,6 +832,14 @@ PrefabInstance:
     - target: {fileID: 2424425683079104995, guid: 2c0f0b4781af9eb46965247c901d8c4b, type: 3}
       propertyPath: m_Name
       value: Enemy1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2424425683079104995, guid: 2c0f0b4781af9eb46965247c901d8c4b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3481822850798251456, guid: 2c0f0b4781af9eb46965247c901d8c4b, type: 3}
+      propertyPath: movingLeft
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -881,6 +901,10 @@ PrefabInstance:
     - target: {fileID: 2424425683079104995, guid: 2c0f0b4781af9eb46965247c901d8c4b, type: 3}
       propertyPath: m_Name
       value: Enemy1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2424425683079104995, guid: 2c0f0b4781af9eb46965247c901d8c4b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1070,6 +1094,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2424425683079104995, guid: 2c0f0b4781af9eb46965247c901d8c4b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1130,6 +1158,10 @@ PrefabInstance:
     - target: {fileID: 2424425683079104995, guid: 2c0f0b4781af9eb46965247c901d8c4b, type: 3}
       propertyPath: m_Name
       value: Enemy1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2424425683079104995, guid: 2c0f0b4781af9eb46965247c901d8c4b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2784,6 +2816,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2424425683079104995, guid: 2c0f0b4781af9eb46965247c901d8c4b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2844,6 +2880,14 @@ PrefabInstance:
     - target: {fileID: 2424425683079104995, guid: 2c0f0b4781af9eb46965247c901d8c4b, type: 3}
       propertyPath: m_Name
       value: Enemy1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2424425683079104995, guid: 2c0f0b4781af9eb46965247c901d8c4b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3481822850798251456, guid: 2c0f0b4781af9eb46965247c901d8c4b, type: 3}
+      propertyPath: movingLeft
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -21,10 +21,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private bool _isGrounded;
     [SerializeField] private bool _isWalled;
     [SerializeField] private bool _isCrouching = false;
+    [SerializeField] private bool _isCrawling = false;
 
     [SerializeField] private float maxVelocity;
     [SerializeField] private Vector2 playerVelocity;
     [SerializeField] private Vector2 _wallCheck = new Vector2(1.2f, 2.5f);
+    [SerializeField] private Vector2 _wallCheckOffset = new Vector2(0.2f, 0f);
 
     private float coyoteTime = 0.2f;
     [SerializeField] private float coyoteTimeCounter;
@@ -46,6 +48,11 @@ public class PlayerController : MonoBehaviour
         inputAction.Movement.Jump.started += Jump_started;
         inputAction.Movement.Jump.performed += Jump_performed;
         inputAction.Movement.Jump.canceled += Jump_canceled;
+        inputAction.Movement.Crouch.started += Crouch_started;
+        inputAction.Movement.Crouch.canceled += Crouch_canceled;
+        inputAction.Movement.Crawl.started += Crawl_started;
+        inputAction.Movement.StandUp.started += StandUp_started;
+
         rb = gameObject.GetComponent<Rigidbody2D>();
         playerCollider = gameObject.GetComponent<BoxCollider2D>();
         _spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
@@ -61,7 +68,7 @@ public class PlayerController : MonoBehaviour
         // Information
         playerVelocity = rb.velocity;
         _isGrounded = Physics2D.Raycast(transform.position, Vector2.down, distToGround + 0.1f, LayerMask.GetMask("Ground"));
-        _isWalled = Physics2D.BoxCast(transform.position, new Vector2(1.2f, 1.8f), 0, new Vector2(0,0), 0, LayerMask.GetMask("Ground"));
+        //_isWalled = Physics2D.BoxCast(transform.position, new Vector2(1.2f, 1.8f), 0, new Vector2(0,0), 0, LayerMask.GetMask("Ground"));
 
         Flip();
 
@@ -85,16 +92,12 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    //private void OnGUI()
-    //{
-    //    GUI.Label(new Rect(0, 0, 80, 50), "Health: " + _health.health, "box");
-    //}
-
     // First frame of the jump.
     private void Jump_started(InputAction.CallbackContext obj)
     {
         jumpBufferCounter = jumpBufferTime;
-        playerCollider.size = new Vector2(1.2f, 2.7f);
+        playerCollider.size = new Vector2(1f, 2.7f);
+        playerCollider.offset = new Vector2(0f, 0f);
         maxSpeed = 10f;
         //inputAction.Movement.Jump.Enable();
         _isCrouching = false;
@@ -132,29 +135,70 @@ public class PlayerController : MonoBehaviour
 
     public void Jump(InputAction.CallbackContext value)
     {
-        //jumpVal = value.ReadValue<float>();
 
     }
 
     public void Crouch(InputAction.CallbackContext value)
     {
-        crouchVal = value.ReadValue<float>();
         if(!_isCrouching)
-        {
-            playerCollider.size = new Vector2(1.2f, 1.35f);
-            maxSpeed = 5f;
-            //inputAction.Movement.Jump.Disable();
-            _isCrouching = true;
-        }
+            crouchVal = value.ReadValue<float>();
     }
     public void StandUp(InputAction.CallbackContext value)
     {
-        if(_isCrouching)
+
+    }
+
+    public void Crawl(InputAction.CallbackContext value)
+    {
+
+    }
+
+    private void StandUp_started(InputAction.CallbackContext obj)
+    {
+        if (_isCrawling)
         {
-            playerCollider.size = new Vector2(1.2f, 2.7f);
+            playerCollider.size = new Vector2(1f, 1.7f);
+            playerCollider.offset = new Vector2(0f, 0.5f);
+            maxSpeed = 5f;
+            inputAction.Movement.Jump.Enable();
+            inputAction.Movement.Shoot.Enable();
+            _isCrawling = false;
+        }
+        else if (_isCrouching)
+        {
+            playerCollider.size = new Vector2(1f, 2.7f);
+            playerCollider.offset = new Vector2(0f, 0f);
             maxSpeed = 10f;
             //inputAction.Movement.Jump.Enable();
             _isCrouching = false;
+        }
+    }
+
+    private void Crouch_canceled(InputAction.CallbackContext obj)
+    {
+        _isCrouching = true;
+    }
+
+    private void Crawl_started(InputAction.CallbackContext obj)
+    {
+        if (_isCrouching && crouchVal == 0)
+        {
+            playerCollider.size = new Vector2(1f, 1f);
+            playerCollider.offset = new Vector2(0f, 1f);
+            maxSpeed = 3f;
+            inputAction.Movement.Jump.Disable();
+            inputAction.Movement.Shoot.Disable();
+            _isCrawling = true;
+        }
+    }
+
+    private void Crouch_started(InputAction.CallbackContext obj)
+    {
+        if (!_isCrouching)
+        {
+            playerCollider.size = new Vector2(1f, 1.7f);
+            playerCollider.offset = new Vector2(0f, 0.5f);
+            maxSpeed = 5f;
         }
     }
 
@@ -240,10 +284,12 @@ public class PlayerController : MonoBehaviour
     // Is player facing a wall? If the player is crouching, shrink the box size accouring to the collider.
     private bool IsWalled()
     {
-        if(_isCrouching)
-            return Physics2D.BoxCast(transform.position, new Vector2(_wallCheck.x, 1.1f), 0, new Vector2(0, 0), 0, LayerMask.GetMask("Ground"));
+        if(_isCrawling)
+            return Physics2D.BoxCast(new Vector2(transform.position.x + (_wallCheckOffset.x * transform.localScale.x), transform.position.y + 1f), new Vector2(_wallCheck.x, 0.5f), 0, new Vector2(0, 0), 0, LayerMask.GetMask("Ground"));
+        else if (_isCrouching)
+            return Physics2D.BoxCast(new Vector2(transform.position.x + (_wallCheckOffset.x * transform.localScale.x), transform.position.y + 0.3f), new Vector2(_wallCheck.x, 1.1f), 0, new Vector2(0, 0), 0, LayerMask.GetMask("Ground"));
         else
-            return Physics2D.BoxCast(transform.position, _wallCheck, 0, new Vector2(0, 0), 0, LayerMask.GetMask("Ground"));
+            return Physics2D.BoxCast(new Vector2(transform.position.x + (_wallCheckOffset.x * transform.localScale.x), transform.position.y + _wallCheckOffset.y), _wallCheck, 0, new Vector2(0, 0), 0, LayerMask.GetMask("Ground"));
     }
 
     private void OnEnable()
@@ -261,10 +307,12 @@ public class PlayerController : MonoBehaviour
     {
         Gizmos.color = Color.yellow;
         // Draw wallcheck gizmos.
-        if(_isCrouching)
-            Gizmos.DrawWireCube(transform.position, new Vector3(_wallCheck.x, 1.1f, 0));
+        if(_isCrawling)
+            Gizmos.DrawWireCube(new Vector2(transform.position.x + (_wallCheckOffset.x * transform.localScale.x), transform.position.y + 1f), new Vector2(_wallCheck.x, 0.5f));
+        else if (_isCrouching)
+            Gizmos.DrawWireCube(new Vector2(transform.position.x + (_wallCheckOffset.x * transform.localScale.x), transform.position.y + 0.3f), new Vector2(_wallCheck.x, 1.1f));
         else
-            Gizmos.DrawWireCube(transform.position, new Vector3(_wallCheck.x, _wallCheck.y, 0));
+            Gizmos.DrawWireCube(new Vector2(transform.position.x + (_wallCheckOffset.x * transform.localScale.x), transform.position.y + _wallCheckOffset.y), new Vector3(_wallCheck.x, _wallCheck.y, 0));
     }
 
 }

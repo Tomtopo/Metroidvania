@@ -33,6 +33,15 @@
                     "initialStateCheck": false
                 },
                 {
+                    "name": "Crawl",
+                    "type": "Button",
+                    "id": "ac58acdd-48e2-4f83-9c9e-636a9092918c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "StandUp",
                     "type": "Button",
                     "id": "5971f864-8f58-4066-a158-e254d59347d4",
@@ -450,6 +459,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "TurretMode",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "61297e45-5490-40a1-925d-a6ebe5434c2a",
+                    "path": "<Gamepad>/dpad/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Crawl",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3d9d7031-a0b4-4800-bfaf-194b4076aa43",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Crawl",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

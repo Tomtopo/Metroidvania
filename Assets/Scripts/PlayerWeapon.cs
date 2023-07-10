@@ -23,11 +23,35 @@ public class PlayerWeapon : MonoBehaviour
     public float aimingVal;
     public float aimingUpCornerVal;
 
+
     private void Start()
     {
         _playerController = GetComponent<PlayerController>();
         inputAction = _playerController.inputAction;
+        inputAction.Movement.Shoot.started += Shoot_started;
         pi = GetComponent<PlayerInput>();
+    }
+
+    private void Shoot_started(InputAction.CallbackContext obj)
+    {
+        if (_shootCooldownCounter <= 0f && !isAimingUp && !isAimingUpCorner)
+        {
+            //Debug.Log("ShootDefault");
+            Instantiate(_projectile, new Vector2(transform.position.x + transform.localScale.x, transform.position.y + 0.2f), Quaternion.identity);
+            _shootCooldownCounter = _shootCooldown;
+        }
+        else if (_shootCooldownCounter <= 0f && isAimingUpCorner)
+        {
+            //Debug.Log("ShootUpCorner");
+            Instantiate(_projectile, new Vector2(transform.position.x + transform.localScale.x, transform.position.y + 1.3f), Quaternion.identity);
+            _shootCooldownCounter = _shootCooldown;
+        }
+        else if (_shootCooldownCounter <= 0f && isAimingUp)
+        {
+            //Debug.Log("ShootUp");
+            Instantiate(_projectile, new Vector2(transform.position.x, transform.position.y + 1.5f), Quaternion.identity);
+            _shootCooldownCounter = _shootCooldown;
+        }
     }
 
 
@@ -51,26 +75,9 @@ public class PlayerWeapon : MonoBehaviour
             isAimingUpCorner = false;
     }
 
-    public void InstantiateProjectile(InputAction.CallbackContext value)
+    public void Shoot(InputAction.CallbackContext value)
     {
-        if (_shootCooldownCounter <= 0f && !isAimingUp && !isAimingUpCorner)
-        {
-            //Debug.Log("ShootDefault");
-            Instantiate(_projectile, new Vector2(transform.position.x + transform.localScale.x, transform.position.y + 0.2f), Quaternion.identity);
-            _shootCooldownCounter = _shootCooldown;
-        }
-        else if (_shootCooldownCounter <= 0f && isAimingUpCorner)
-        {
-            //Debug.Log("ShootUpCorner");
-            Instantiate(_projectile, new Vector2(transform.position.x + transform.localScale.x, transform.position.y + 1.3f), Quaternion.identity);
-            _shootCooldownCounter = _shootCooldown;
-        }
-        else if(_shootCooldownCounter <= 0f && isAimingUp)
-        {
-            //Debug.Log("ShootUp");
-            Instantiate(_projectile, new Vector2(transform.position.x, transform.position.y + 1.5f), Quaternion.identity);
-            _shootCooldownCounter = _shootCooldown;
-        }
+
 
     }
 

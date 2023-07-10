@@ -108,6 +108,7 @@ MonoBehaviour:
   groundCheckSize: {x: 0.5, y: 0.3}
   _offsetWallCheck: {x: 0.25, y: 0}
   wallCheckSize: {x: 0.5, y: 0.48}
+  movingLeft: 0
 --- !u!114 &2883642456647188178
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -11,6 +11,7 @@ public class BasicEnemyController : MonoBehaviour
     [SerializeField] private float _gravityForce;
     private Health _health;
     private Rigidbody2D rb;
+    private Collider2D _col;
     [SerializeField] private bool isJustInstantiated = true;
 
     [SerializeField] private Vector2 _offsetGroundCheck;
@@ -18,14 +19,31 @@ public class BasicEnemyController : MonoBehaviour
     [SerializeField] private Vector2 _offsetWallCheck;
     [SerializeField] private Vector2 wallCheckSize;
     private float gravityForce = 5f;
+    private int _moveDir;
+    private int _wallCheckRotateVal;
+    private int _groundCheckRotateVal;
 
     private bool _rotated = false;
+
+    public bool movingLeft;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         _health = GetComponent<Health>();
+        _col = GetComponent<Collider2D>();
+        if (movingLeft)
+        {
+            _moveDir = -1;
+            _wallCheckRotateVal = -90;
+            _groundCheckRotateVal = 90;
+            //_offsetGroundCheck.x *= -1;
+            //_offsetWallCheck.x *= -1;
+        }
+        else
+            
+            _moveDir = 1;
     }
 
     // Update is called once per frame
@@ -46,22 +64,47 @@ public class BasicEnemyController : MonoBehaviour
                 if (GroundCheck())
                 {
                     _rotated = false;
-                    transform.Translate(transform.right * _speed * Time.deltaTime, Space.World);
+                    if(movingLeft)
+                        transform.Translate(-transform.right * _speed * Time.deltaTime, Space.World);
+                    else
+                        transform.Translate(transform.right * _speed * Time.deltaTime, Space.World);
                 }
                 else if(GroundAheadCheck())
-                    transform.Translate(transform.right * _speed * Time.deltaTime, Space.World);
+                {
+                    if(movingLeft)
+                        transform.Translate(-transform.right * _speed * Time.deltaTime, Space.World);
+                    else
+                        transform.Translate(transform.right * _speed * Time.deltaTime, Space.World);
+                }
+                    
             }
             else if (!GroundCheck() && !_rotated)
             {
-                transform.Rotate(new Vector3(0, 0, -90f));
+                if(movingLeft)
+                    transform.Rotate(new Vector3(0, 0, 90));
+                else
+                    transform.Rotate(new Vector3(0, 0, -90));
                 _rotated = true;
             }
             else if (WallCheck())
             {
-                transform.Rotate(new Vector3(0, 0, 90f));
+                if(movingLeft)
+                    transform.Rotate(new Vector3(0, 0, -90));
+                else
+                    transform.Rotate(new Vector3(0, 0, 90));
             }
             else if (GroundCheck() || GroundAheadCheck())
-                transform.Translate(transform.right * _speed * Time.deltaTime, Space.World);
+            {
+                if(movingLeft)
+                    transform.Translate(-transform.right * _speed * Time.deltaTime, Space.World);
+                else
+                    transform.Translate(transform.right * _speed * Time.deltaTime, Space.World);
+            }
+                
+        }
+        if(CollidedWithPlayer())
+        {
+            GameObject.Find("Player").GetComponent<PlayerHealth>().TakeDamage(_strength, gameObject);
         }
 
 
@@ -70,29 +113,61 @@ public class BasicEnemyController : MonoBehaviour
 
     private bool WallCheck()
     {
-        if (transform.eulerAngles.z == 90 || transform.eulerAngles.z == 270)
-            return Physics2D.BoxCast(transform.position + (transform.right * _offsetWallCheck.x), new Vector2(transform.localScale.x * wallCheckSize.y, transform.localScale.y * wallCheckSize.x), 0, new Vector2(0, 0), 0, LayerMask.GetMask("Ground"));
+        if(movingLeft)
+        {
+            if (transform.eulerAngles.z == 90 || transform.eulerAngles.z == 270)
+                return Physics2D.BoxCast(transform.position + (-transform.right * _offsetWallCheck.x), new Vector2(transform.localScale.x * wallCheckSize.y, transform.localScale.y * wallCheckSize.x), 0, new Vector2(0, 0), 0, LayerMask.GetMask("Ground"));
+            else
+                return Physics2D.BoxCast(transform.position + (-transform.right * _offsetWallCheck.x), new Vector2(transform.localScale.x * wallCheckSize.x, transform.localScale.y * wallCheckSize.y), 0, new Vector2(0, 0), 0, LayerMask.GetMask("Ground"));
+
+        }
         else
-            return Physics2D.BoxCast(transform.position + (transform.right * _offsetWallCheck.x), new Vector2(transform.localScale.x * wallCheckSize.x, transform.localScale.y * wallCheckSize.y), 0, new Vector2(0, 0), 0, LayerMask.GetMask("Ground"));
+        {
+            if (transform.eulerAngles.z == 90 || transform.eulerAngles.z == 270)
+                return Physics2D.BoxCast(transform.position + (transform.right * _offsetWallCheck.x), new Vector2(transform.localScale.x * wallCheckSize.y, transform.localScale.y * wallCheckSize.x), 0, new Vector2(0, 0), 0, LayerMask.GetMask("Ground"));
+            else
+                return Physics2D.BoxCast(transform.position + (transform.right * _offsetWallCheck.x), new Vector2(transform.localScale.x * wallCheckSize.x, transform.localScale.y * wallCheckSize.y), 0, new Vector2(0, 0), 0, LayerMask.GetMask("Ground"));
+
+        }
     }
 
     private bool GroundCheck()
     {
-        if(transform.eulerAngles.z == 90 || transform.eulerAngles.z == 270)
-            return Physics2D.BoxCast(transform.position + (-transform.up * _offsetGroundCheck.y) + (transform.right * _offsetGroundCheck.x), new Vector2(groundCheckSize.y, groundCheckSize.x), 0, new Vector2(0, 0), 0, LayerMask.GetMask("Ground"));
+        if(movingLeft)
+        {
+            if (transform.eulerAngles.z == 90 || transform.eulerAngles.z == 270)
+                return Physics2D.BoxCast(transform.position + (-transform.up * _offsetGroundCheck.y) + (-transform.right * _offsetGroundCheck.x), new Vector2(groundCheckSize.y, groundCheckSize.x), 0, new Vector2(0, 0), 0, LayerMask.GetMask("Ground"));
+            else
+                return Physics2D.BoxCast(transform.position + (-transform.up * _offsetGroundCheck.y) + (-transform.right * _offsetGroundCheck.x), new Vector2(groundCheckSize.x, groundCheckSize.y), 0, new Vector2(0, 0), 0, LayerMask.GetMask("Ground"));
+
+        }
         else
-            return Physics2D.BoxCast(transform.position + (-transform.up * _offsetGroundCheck.y) + (transform.right * _offsetGroundCheck.x), new Vector2(groundCheckSize.x, groundCheckSize.y), 0, new Vector2(0, 0), 0, LayerMask.GetMask("Ground"));
+        {
+            if (transform.eulerAngles.z == 90 || transform.eulerAngles.z == 270)
+                return Physics2D.BoxCast(transform.position + (-transform.up * _offsetGroundCheck.y) + (transform.right * _offsetGroundCheck.x), new Vector2(groundCheckSize.y, groundCheckSize.x), 0, new Vector2(0, 0), 0, LayerMask.GetMask("Ground"));
+            else
+                return Physics2D.BoxCast(transform.position + (-transform.up * _offsetGroundCheck.y) + (transform.right * _offsetGroundCheck.x), new Vector2(groundCheckSize.x, groundCheckSize.y), 0, new Vector2(0, 0), 0, LayerMask.GetMask("Ground"));
+
+        }
     }
 
     private bool GroundAheadCheck()
     {
-        return Physics2D.Raycast(transform.position + (transform.right * 0.75f), -transform.up * 0.75f, 1f, LayerMask.GetMask("Ground"));
+        if(movingLeft)
+            return Physics2D.Raycast(transform.position + (-transform.right * 0.75f), -transform.up * 0.75f, 1f, LayerMask.GetMask("Ground"));
+        else
+            return Physics2D.Raycast(transform.position + (transform.right * 0.75f), -transform.up * 0.75f, 1f, LayerMask.GetMask("Ground"));
     }
 
     //private bool RearGroundCheck()
     //{
     //    return Physics2D.Raycast(transform.position - (transform.right / 2f), -transform.up, (transform.localScale.y / 2f) + 0.2f, LayerMask.GetMask("Ground"));
     //}
+
+    private bool CollidedWithPlayer()
+    {
+        return Physics2D.BoxCast(transform.position, _col.bounds.size, 0, new Vector2(0,0), 0, LayerMask.GetMask("Player"));
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -103,7 +178,7 @@ public class BasicEnemyController : MonoBehaviour
 
         if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
-            collision.collider.gameObject.GetComponent<PlayerHealth>().TakeDamage(_strength);
+            collision.collider.gameObject.GetComponent<PlayerHealth>().TakeDamage(_strength, gameObject);
         }
     }
 
@@ -116,24 +191,43 @@ public class BasicEnemyController : MonoBehaviour
 
         if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
-            collision.gameObject.GetComponent<PlayerHealth>().TakeDamage(_strength);
+            collision.gameObject.GetComponent<PlayerHealth>().TakeDamage(_strength, gameObject);
 }
     }
 
 
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.yellow;
-        if (transform.eulerAngles.z == 90 || transform.eulerAngles.z == 270)
-            Gizmos.DrawWireCube(transform.position + (transform.right * _offsetWallCheck.x), new Vector2(transform.localScale.x * wallCheckSize.y, transform.localScale.y * wallCheckSize.x));
-        else
-            Gizmos.DrawWireCube(transform.position + (transform.right * _offsetWallCheck.x), new Vector2(transform.localScale.x * wallCheckSize.x, transform.localScale.y * wallCheckSize.y));
-        Gizmos.color = Color.blue;
-        if (transform.eulerAngles.z == 90 || transform.eulerAngles.z == 270)
-            Gizmos.DrawWireCube(transform.position + (-transform.up * _offsetGroundCheck.y) + (transform.right * _offsetGroundCheck.x), new Vector2(groundCheckSize.y, groundCheckSize.x));
-        else
-            Gizmos.DrawWireCube(transform.position + (-transform.up * _offsetGroundCheck.y) + (transform.right * _offsetGroundCheck.x), new Vector2(groundCheckSize.x, groundCheckSize.y));
+        if(movingLeft)
+        {
+            Gizmos.color = Color.yellow;
+            if (transform.eulerAngles.z == 90 || transform.eulerAngles.z == 270)
+                Gizmos.DrawWireCube(transform.position + (-transform.right * _offsetWallCheck.x), new Vector2(transform.localScale.x * wallCheckSize.y, transform.localScale.y * wallCheckSize.x));
+            else
+                Gizmos.DrawWireCube(transform.position + (-transform.right * _offsetWallCheck.x), new Vector2(transform.localScale.x * wallCheckSize.x, transform.localScale.y * wallCheckSize.y));
+            Gizmos.color = Color.blue;
+            if (transform.eulerAngles.z == 90 || transform.eulerAngles.z == 270)
+                Gizmos.DrawWireCube((transform.position + (-transform.up * _offsetGroundCheck.y) + -transform.right * _offsetGroundCheck.x), new Vector2(groundCheckSize.y, groundCheckSize.x));
+            else
+                Gizmos.DrawWireCube((transform.position + (-transform.up * _offsetGroundCheck.y) + -transform.right * _offsetGroundCheck.x), new Vector2(groundCheckSize.x, groundCheckSize.y));
 
-        Gizmos.DrawLine(transform.position + (transform.right * 0.75f), transform.position + (transform.right * 0.75f) - (transform.up * 0.75f));
+            Gizmos.DrawLine(transform.position + (-transform.right * 0.75f), (transform.position + (-transform.right) * 0.75f) - (transform.up * 0.75f));
+        }
+        else
+        {
+            Gizmos.color = Color.yellow;
+            if (transform.eulerAngles.z == 90 || transform.eulerAngles.z == 270)
+                Gizmos.DrawWireCube(transform.position + (transform.right * _offsetWallCheck.x), new Vector2(transform.localScale.x * wallCheckSize.y, transform.localScale.y * wallCheckSize.x));
+            else
+                Gizmos.DrawWireCube(transform.position + (transform.right * _offsetWallCheck.x), new Vector2(transform.localScale.x * wallCheckSize.x, transform.localScale.y * wallCheckSize.y));
+            Gizmos.color = Color.blue;
+            if (transform.eulerAngles.z == 90 || transform.eulerAngles.z == 270)
+                Gizmos.DrawWireCube((transform.position + (-transform.up * _offsetGroundCheck.y) + transform.right * _offsetGroundCheck.x), new Vector2(groundCheckSize.y, groundCheckSize.x));
+            else
+                Gizmos.DrawWireCube((transform.position + (-transform.up * _offsetGroundCheck.y) + transform.right * _offsetGroundCheck.x), new Vector2(groundCheckSize.x, groundCheckSize.y));
+
+            Gizmos.DrawLine(transform.position + (transform.right * 0.75f), (transform.position + transform.right * 0.75f) - (transform.up * 0.75f));
+        }
+
     }
 }
