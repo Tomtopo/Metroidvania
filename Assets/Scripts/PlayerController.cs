@@ -13,7 +13,11 @@ public class PlayerController : MonoBehaviour
     private PlayerWeapon _weapon;
     private PlayerHealth _health;
 
-    [SerializeField] private float maxSpeed = 10f;
+
+    [SerializeField] private float speed = 10f;
+    [SerializeField] private float runSpeed = 10f;
+    [SerializeField] private float crouchSpeed = 5f;
+    [SerializeField] private float crawlSpeed = 3f;
     [SerializeField] private float speedCounter;
     [SerializeField] private float jumpForce = 1f;
     [SerializeField] private float _accelerationOnGround = 50f;
@@ -96,9 +100,9 @@ public class PlayerController : MonoBehaviour
     private void Jump_started(InputAction.CallbackContext obj)
     {
         jumpBufferCounter = jumpBufferTime;
-        playerCollider.size = new Vector2(1f, 2.7f);
+        playerCollider.size = new Vector2(0.95f, 2.7f);
         playerCollider.offset = new Vector2(0f, 0f);
-        maxSpeed = 10f;
+        speed = runSpeed;
         //inputAction.Movement.Jump.Enable();
         _isCrouching = false;
     }
@@ -155,37 +159,41 @@ public class PlayerController : MonoBehaviour
 
     private void StandUp_started(InputAction.CallbackContext obj)
     {
-        if (_isCrawling)
-        {
-            playerCollider.size = new Vector2(1f, 1.7f);
-            playerCollider.offset = new Vector2(0f, 0.5f);
-            maxSpeed = 5f;
-            inputAction.Movement.Jump.Enable();
-            inputAction.Movement.Shoot.Enable();
-            _isCrawling = false;
-        }
-        else if (_isCrouching)
-        {
-            playerCollider.size = new Vector2(1f, 2.7f);
-            playerCollider.offset = new Vector2(0f, 0f);
-            maxSpeed = 10f;
-            //inputAction.Movement.Jump.Enable();
-            _isCrouching = false;
-        }
+        //if (_isCrawling && !CeilingCheck())
+        //{
+        //    //transform.position = new Vector2(transform.position.x, transform.position.y + 0.7f);
+        //    playerCollider.size = new Vector2(0.95f, 1.7f);
+        //    //playerCollider.offset = new Vector2(0f, 0.5f);
+        //    speed = crouchSpeed;
+        //    inputAction.Movement.Jump.Enable();
+        //    inputAction.Movement.Shoot.Enable();
+        //    _isCrawling = false;
+        //}
+        //else if (_isCrouching && !CeilingCheck())
+        //{
+        //    //transform.position = new Vector2(transform.position.x, transform.position.y + 1f);
+        //    playerCollider.size = new Vector2(0.95f, 2.7f);
+        //    //playerCollider.offset = new Vector2(0f, 0f);
+        //    speed = runSpeed;
+        //    //inputAction.Movement.Jump.Enable();
+        //    _isCrouching = false;
+        //}
+        StartCoroutine(RiseUp());
     }
 
-    private void Crouch_canceled(InputAction.CallbackContext obj)
+    private void Crouch_canceled(InputAction.CallbackContext value)
     {
-        _isCrouching = true;
+        //_isCrouching = true;
+        crouchVal = value.ReadValue<float>();
     }
 
     private void Crawl_started(InputAction.CallbackContext obj)
     {
-        if (_isCrouching && crouchVal == 0)
+        if (_isCrouching && crouchVal == 0 && !_weapon.turretModeEnabled)
         {
-            playerCollider.size = new Vector2(1f, 1f);
-            playerCollider.offset = new Vector2(0f, 1f);
-            maxSpeed = 3f;
+            playerCollider.size = new Vector2(0.95f, 0.95f);
+            //playerCollider.offset = new Vector2(0f, 1f);
+            speed = crawlSpeed;
             inputAction.Movement.Jump.Disable();
             inputAction.Movement.Shoot.Disable();
             _isCrawling = true;
@@ -196,9 +204,10 @@ public class PlayerController : MonoBehaviour
     {
         if (!_isCrouching)
         {
-            playerCollider.size = new Vector2(1f, 1.7f);
-            playerCollider.offset = new Vector2(0f, 0.5f);
-            maxSpeed = 5f;
+            _isCrouching = true;
+            playerCollider.size = new Vector2(0.95f, 1.7f);
+            //playerCollider.offset = new Vector2(0f, 0.5f);
+            speed = crouchSpeed;
         }
     }
 
@@ -228,10 +237,10 @@ public class PlayerController : MonoBehaviour
                 }
 
             }
-            if (speedCounter > maxSpeed)
-                speedCounter = maxSpeed;
-            else if (speedCounter < -maxSpeed)
-                speedCounter = -maxSpeed;
+            if (speedCounter > speed)
+                speedCounter = speed;
+            else if (speedCounter < -speed)
+                speedCounter = -speed;
         }
         else
         {
@@ -257,10 +266,10 @@ public class PlayerController : MonoBehaviour
                 }
 
             }
-            if (speedCounter > maxSpeed)
-                speedCounter = maxSpeed;
-            else if (speedCounter < -maxSpeed)
-                speedCounter = -maxSpeed;
+            if (speedCounter > speed)
+                speedCounter = speed;
+            else if (speedCounter < -speed)
+                speedCounter = -speed;
         }
     }
 
@@ -275,7 +284,7 @@ public class PlayerController : MonoBehaviour
             transform.localScale = new Vector2(moveVal, transform.localScale.y);
     }
 
-    private bool IsGrounded()
+    public bool IsGrounded()
     {
         return Physics2D.Raycast(transform.position, Vector2.down, distToGround + 0.05f, LayerMask.GetMask("Ground"));
 
@@ -284,12 +293,53 @@ public class PlayerController : MonoBehaviour
     // Is player facing a wall? If the player is crouching, shrink the box size accouring to the collider.
     private bool IsWalled()
     {
-        if(_isCrawling)
-            return Physics2D.BoxCast(new Vector2(transform.position.x + (_wallCheckOffset.x * transform.localScale.x), transform.position.y + 1f), new Vector2(_wallCheck.x, 0.5f), 0, new Vector2(0, 0), 0, LayerMask.GetMask("Ground"));
+        if (_isCrawling)
+            return Physics2D.BoxCast(new Vector2(transform.position.x + (_wallCheckOffset.x * transform.localScale.x), transform.position.y + _wallCheckOffset.y), new Vector2(_wallCheck.x, 0.5f), 0, new Vector2(0, 0), 0, LayerMask.GetMask("Ground"));
         else if (_isCrouching)
-            return Physics2D.BoxCast(new Vector2(transform.position.x + (_wallCheckOffset.x * transform.localScale.x), transform.position.y + 0.3f), new Vector2(_wallCheck.x, 1.1f), 0, new Vector2(0, 0), 0, LayerMask.GetMask("Ground"));
+            return Physics2D.BoxCast(new Vector2(transform.position.x + (_wallCheckOffset.x * transform.localScale.x), transform.position.y + _wallCheckOffset.y), new Vector2(_wallCheck.x, 1.1f), 0, new Vector2(0, 0), 0, LayerMask.GetMask("Ground"));
         else
             return Physics2D.BoxCast(new Vector2(transform.position.x + (_wallCheckOffset.x * transform.localScale.x), transform.position.y + _wallCheckOffset.y), _wallCheck, 0, new Vector2(0, 0), 0, LayerMask.GetMask("Ground"));
+    }
+
+    private bool CeilingCheck()
+    {
+        if(_isCrawling)
+            return Physics2D.BoxCast(new Vector2(transform.position.x, transform.position.y + playerCollider.size.y / 2), new Vector2(0.9f, 0.5f), 0, new Vector2(0, 0), 0, LayerMask.GetMask("Ground"));
+        else
+            return Physics2D.BoxCast(new Vector2(transform.position.x, transform.position.y + playerCollider.size.y / 2), new Vector2(0.9f, 0.5f), 0, new Vector2(0, 0), 0, LayerMask.GetMask("Ground"));
+    }
+
+    public IEnumerator RiseUp()
+    {
+        if (_isCrawling && !CeilingCheck())
+        {
+            while(playerCollider.size.y < 1.7f)
+            {
+                playerCollider.size += new Vector2(0, Time.deltaTime * 10f);
+                yield return new WaitForSeconds(Time.deltaTime);
+            }
+            playerCollider.size = new Vector2(0.95f, 1.7f);
+
+            speed = crouchSpeed;
+            inputAction.Movement.Jump.Enable();
+            inputAction.Movement.Shoot.Enable();
+            _isCrawling = false;
+        }
+        else if (_isCrouching && !CeilingCheck())
+        {
+            while (playerCollider.size.y < 2.7f)
+            {
+                playerCollider.size += new Vector2(0, Time.deltaTime * 10f);
+                yield return new WaitForSeconds(Time.deltaTime);
+            }
+            playerCollider.size = new Vector2(0.95f, 2.7f);
+
+            //playerCollider.offset = new Vector2(0f, 0f);
+            speed = runSpeed;
+            //inputAction.Movement.Jump.Enable();
+            _isCrouching = false;
+
+        }
     }
 
     private void OnEnable()
@@ -305,12 +355,17 @@ public class PlayerController : MonoBehaviour
 
     private void OnDrawGizmos()
     {
+        Gizmos.color = Color.blue;
+        if(_isCrawling)
+            Gizmos.DrawWireCube(new Vector2(transform.position.x, transform.position.y + playerCollider.size.y / 2), new Vector2(0.9f, 0.5f));
+        else if(_isCrouching)
+            Gizmos.DrawWireCube(new Vector2(transform.position.x, transform.position.y + playerCollider.size.y / 2), new Vector2(0.9f, 0.5f));
         Gizmos.color = Color.yellow;
         // Draw wallcheck gizmos.
         if(_isCrawling)
-            Gizmos.DrawWireCube(new Vector2(transform.position.x + (_wallCheckOffset.x * transform.localScale.x), transform.position.y + 1f), new Vector2(_wallCheck.x, 0.5f));
+            Gizmos.DrawWireCube(new Vector2(transform.position.x + (_wallCheckOffset.x * transform.localScale.x), transform.position.y + _wallCheckOffset.y), new Vector2(_wallCheck.x, 0.5f));
         else if (_isCrouching)
-            Gizmos.DrawWireCube(new Vector2(transform.position.x + (_wallCheckOffset.x * transform.localScale.x), transform.position.y + 0.3f), new Vector2(_wallCheck.x, 1.1f));
+            Gizmos.DrawWireCube(new Vector2(transform.position.x + (_wallCheckOffset.x * transform.localScale.x), transform.position.y + _wallCheckOffset.y), new Vector2(_wallCheck.x, 1.1f));
         else
             Gizmos.DrawWireCube(new Vector2(transform.position.x + (_wallCheckOffset.x * transform.localScale.x), transform.position.y + _wallCheckOffset.y), new Vector3(_wallCheck.x, _wallCheck.y, 0));
     }

@@ -10,27 +10,50 @@ public class PlayerProjectileController : MonoBehaviour
     private float _shootDirectionX;
     private float _shootDirectionY;
 
+    bool tempisAimingUp;
+    bool tempisAimingDown;
+    bool tempisAimingUpCorner;
+    bool tempisAimingDownCorner;
+
     [SerializeField] private float _distanceToDestroy = 25f;
 
     public float playerProjectileSpeed;
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
         _player = GameObject.Find("Player");
         _weapon = _player.GetComponent<PlayerWeapon>();
+        tempisAimingUp = _weapon.isAimingUp;
+        tempisAimingDown = _weapon.isAimingDown;
+        tempisAimingUpCorner = _weapon.isAimingUpCorner;
+        tempisAimingDownCorner = _weapon.isAimingDownCorner;
 
+    }
 
-        if (_weapon.isAimingUpCorner)
+    // Start is called before the first frame update
+    void Start()
+    {
+        if (tempisAimingUpCorner)
         {
             _shootDirectionY = 1f;
             _shootDirectionX = _player.transform.localScale.x;
             playerProjectileSpeed *= 0.75f;
         }
-        else if (_weapon.isAimingUp)
+        else if (tempisAimingUp)
         {
             _shootDirectionY = 1f;
             _shootDirectionX = 0f;
 
+        }
+        else if (tempisAimingDownCorner)
+        {
+            _shootDirectionY = -1f;
+            _shootDirectionX = _player.transform.localScale.x;
+            playerProjectileSpeed *= 0.75f;
+        }
+        else if (tempisAimingDown)
+        {
+            _shootDirectionY = -1f;
+            _shootDirectionX = 0f;
         }
         else
         {
