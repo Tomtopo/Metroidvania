@@ -36,10 +36,12 @@ public class PlayerWeapon : MonoBehaviour
         pi = GetComponent<PlayerInput>();
     }
 
+    // When shoot button is pressed, instantiates a projectile to a position relative to player where they're aiming.
     private void Shoot_started(InputAction.CallbackContext obj)
     {
         if(_shootCooldownCounter <= 0f)
         {
+            // Saves bool values to temporary variables in case the boolean values are changed during the frame. (not sure if neccessary)
             bool tempisAimingUp = isAimingUp;
             bool tempisAimingDown = isAimingDown;
             bool tempisAimingUpCorner = isAimingUpCorner;
@@ -90,7 +92,7 @@ public class PlayerWeapon : MonoBehaviour
         else
             isAimingUp = false;
 
-        if (aimingDownVal != 0f && !_playerController.IsGrounded())
+        if (aimingDownVal != 0f/* && !_playerController.IsGrounded()*/)
             isAimingDown = true;
         else
             isAimingDown = false;

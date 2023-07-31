@@ -7,11 +7,12 @@ using UnityEngine.UIElements;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D rb;
-    private BoxCollider2D playerCollider;
+    [SerializeField] private BoxCollider2D playerCollider;
     private SpriteRenderer _spriteRenderer;
     public PlayerInputActions inputAction;
     private PlayerWeapon _weapon;
     private PlayerHealth _health;
+    private Animator _animator;
 
 
     [SerializeField] private float speed = 10f;
@@ -63,6 +64,7 @@ public class PlayerController : MonoBehaviour
         distToGround = playerCollider.bounds.extents.y;
         _weapon = GetComponent<PlayerWeapon>();
         _health = GetComponent<PlayerHealth>();
+        _animator = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -82,21 +84,41 @@ public class PlayerController : MonoBehaviour
         if (IsGrounded())
         {
             coyoteTimeCounter = coyoteTime;
+            _animator.SetBool("Jump", false);
         }
         else
         {
             coyoteTimeCounter -= Time.deltaTime;
         }
 
+        if(jumpVal != 0)
+        {
+            _animator.SetBool("Run", false);
+            _animator.SetBool("Idle", false);
+            _animator.SetBool("Jump", true);
+        }
+
+        if(moveVal != 0 && !_animator.GetBool("Jump"))
+        {
+            _animator.SetBool("Run", true);
+            _animator.SetBool("Idle", false);
+        }
+        else if (moveVal == 0 && !_animator.GetBool("Jump"))
+        {
+            _animator.SetBool("Run", false);
+            _animator.SetBool("Idle", true);
+        }
+
         Acceleration();
 
+        // Moves the player horizontally.
         if (!IsWalled() && _weapon.turretModeVal == 0)
             //rb.velocity = new Vector2(moveVal * speed, rb.velocity.y);
             transform.Translate(new Vector2(speedCounter * Time.deltaTime, 0), Space.World);
 
     }
 
-    // First frame of the jump.
+    // First frame of the jump. Changes the player collider size in case the jump starts from crouch position.
     private void Jump_started(InputAction.CallbackContext obj)
     {
         jumpBufferCounter = jumpBufferTime;
@@ -105,6 +127,7 @@ public class PlayerController : MonoBehaviour
         speed = runSpeed;
         //inputAction.Movement.Jump.Enable();
         _isCrouching = false;
+
     }
 
     // Frames during the jump.
@@ -134,17 +157,18 @@ public class PlayerController : MonoBehaviour
     public void Move(InputAction.CallbackContext value)
     {
         moveVal = value.ReadValue<float>();
-        
+
     }
 
     public void Jump(InputAction.CallbackContext value)
     {
-
+        jumpVal = value.ReadValue<float>();
     }
 
     public void Crouch(InputAction.CallbackContext value)
     {
-        if(!_isCrouching)
+        // Only enables crouching if the player isn't moving.
+        if(!_isCrouching && moveVal == 0)
             crouchVal = value.ReadValue<float>();
     }
     public void StandUp(InputAction.CallbackContext value)
@@ -159,25 +183,6 @@ public class PlayerController : MonoBehaviour
 
     private void StandUp_started(InputAction.CallbackContext obj)
     {
-        //if (_isCrawling && !CeilingCheck())
-        //{
-        //    //transform.position = new Vector2(transform.position.x, transform.position.y + 0.7f);
-        //    playerCollider.size = new Vector2(0.95f, 1.7f);
-        //    //playerCollider.offset = new Vector2(0f, 0.5f);
-        //    speed = crouchSpeed;
-        //    inputAction.Movement.Jump.Enable();
-        //    inputAction.Movement.Shoot.Enable();
-        //    _isCrawling = false;
-        //}
-        //else if (_isCrouching && !CeilingCheck())
-        //{
-        //    //transform.position = new Vector2(transform.position.x, transform.position.y + 1f);
-        //    playerCollider.size = new Vector2(0.95f, 2.7f);
-        //    //playerCollider.offset = new Vector2(0f, 0f);
-        //    speed = runSpeed;
-        //    //inputAction.Movement.Jump.Enable();
-        //    _isCrouching = false;
-        //}
         StartCoroutine(RiseUp());
     }
 
@@ -187,9 +192,10 @@ public class PlayerController : MonoBehaviour
         crouchVal = value.ReadValue<float>();
     }
 
+    // Crawling disables jump and shoot inputs and changes the player collider size to smaller.
     private void Crawl_started(InputAction.CallbackContext obj)
     {
-        if (_isCrouching && crouchVal == 0 && !_weapon.turretModeEnabled)
+        if (_isCrouching && crouchVal == 0 && !_weapon.turretModeEnabled && moveVal == 0)
         {
             playerCollider.size = new Vector2(0.95f, 0.95f);
             //playerCollider.offset = new Vector2(0f, 1f);
@@ -202,7 +208,7 @@ public class PlayerController : MonoBehaviour
 
     private void Crouch_started(InputAction.CallbackContext obj)
     {
-        if (!_isCrouching)
+        if (!_isCrouching && moveVal == 0)
         {
             _isCrouching = true;
             playerCollider.size = new Vector2(0.95f, 1.7f);
@@ -211,8 +217,10 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // Accelerates player when they start moving and stop moving and they have a momentum.
     private void Acceleration()
     {
+        // On ground acceleration.
         if(IsGrounded())
         {
             if (moveVal == 1)
@@ -242,6 +250,7 @@ public class PlayerController : MonoBehaviour
             else if (speedCounter < -speed)
                 speedCounter = -speed;
         }
+        // Jumping horizontal acceleration.
         else
         {
             if (moveVal == 1)
@@ -276,17 +285,14 @@ public class PlayerController : MonoBehaviour
     // Flip the character sprite.
     private void Flip()
     {
-        //if (moveVal > 0f)
-        //    _spriteRenderer.flipX = false;
-        //else if (moveVal < 0f)
-        //    _spriteRenderer.flipX = true;
         if(moveVal != 0f)
             transform.localScale = new Vector2(moveVal, transform.localScale.y);
     }
 
     public bool IsGrounded()
     {
-        return Physics2D.Raycast(transform.position, Vector2.down, distToGround + 0.05f, LayerMask.GetMask("Ground"));
+        //return Physics2D.Raycast(transform.position, Vector2.down, distToGround + 0.05f, LayerMask.GetMask("Ground"));
+        return Physics2D.BoxCast(transform.position + (Vector3.down * playerCollider.size.y / 2), new Vector2(playerCollider.size.x, 0.5f), 0, Vector2.zero, 0, LayerMask.GetMask("Ground"));
 
     }
 
@@ -309,6 +315,7 @@ public class PlayerController : MonoBehaviour
             return Physics2D.BoxCast(new Vector2(transform.position.x, transform.position.y + playerCollider.size.y / 2), new Vector2(0.9f, 0.5f), 0, new Vector2(0, 0), 0, LayerMask.GetMask("Ground"));
     }
 
+    // Enumerator to standing up from crouching position. Enlarges player collider size step by step. Without might cause clipping into ground when doing in certain poitions.
     public IEnumerator RiseUp()
     {
         if (_isCrawling && !CeilingCheck())
@@ -356,6 +363,7 @@ public class PlayerController : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.blue;
+        Gizmos.DrawWireCube(transform.position + (Vector3.down * playerCollider.size.y / 2), new Vector2(playerCollider.size.x, 0.5f));
         if(_isCrawling)
             Gizmos.DrawWireCube(new Vector2(transform.position.x, transform.position.y + playerCollider.size.y / 2), new Vector2(0.9f, 0.5f));
         else if(_isCrouching)
