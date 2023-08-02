@@ -15,8 +15,8 @@ TagManager:
   - PlayerProjectile
   - Player
   - Enemy
-  - 
-  - 
+  - Wall
+  - Slope
   - 
   - 
   - 

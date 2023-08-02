@@ -92,7 +92,7 @@ public class PlayerWeapon : MonoBehaviour
         else
             isAimingUp = false;
 
-        if (aimingDownVal != 0f/* && !_playerController.IsGrounded()*/)
+        if (aimingDownVal != 0f && !_playerController.IsGrounded())
             isAimingDown = true;
         else
             isAimingDown = false;

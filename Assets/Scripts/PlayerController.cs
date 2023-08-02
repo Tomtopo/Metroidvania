@@ -91,14 +91,21 @@ public class PlayerController : MonoBehaviour
             coyoteTimeCounter -= Time.deltaTime;
         }
 
-        if(jumpVal != 0)
+        //if(IsOnSlope())
+        //{
+        //    rb.constraints = RigidbodyConstraints2D.FreezePositionX;
+        //    rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+        //}
+
+
+        if(!IsGrounded())
         {
             _animator.SetBool("Run", false);
             _animator.SetBool("Idle", false);
             _animator.SetBool("Jump", true);
         }
 
-        if(moveVal != 0 && !_animator.GetBool("Jump"))
+        if (moveVal != 0 && !_animator.GetBool("Jump"))
         {
             _animator.SetBool("Run", true);
             _animator.SetBool("Idle", false);
@@ -110,6 +117,7 @@ public class PlayerController : MonoBehaviour
         }
 
         Acceleration();
+
 
         // Moves the player horizontally.
         if (!IsWalled() && _weapon.turretModeVal == 0)
@@ -127,7 +135,6 @@ public class PlayerController : MonoBehaviour
         speed = runSpeed;
         //inputAction.Movement.Jump.Enable();
         _isCrouching = false;
-
     }
 
     // Frames during the jump.
@@ -147,7 +154,7 @@ public class PlayerController : MonoBehaviour
     {
         // Start dropping the player if they release the jump button.
         if (rb.velocity.y > 0f)
-        {
+        {     
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
             coyoteTimeCounter = 0f;
         }
@@ -201,6 +208,7 @@ public class PlayerController : MonoBehaviour
             //playerCollider.offset = new Vector2(0f, 1f);
             speed = crawlSpeed;
             inputAction.Movement.Jump.Disable();
+            //jumpForce = 0f;
             inputAction.Movement.Shoot.Disable();
             _isCrawling = true;
         }
@@ -292,7 +300,14 @@ public class PlayerController : MonoBehaviour
     public bool IsGrounded()
     {
         //return Physics2D.Raycast(transform.position, Vector2.down, distToGround + 0.05f, LayerMask.GetMask("Ground"));
-        return Physics2D.BoxCast(transform.position + (Vector3.down * playerCollider.size.y / 2), new Vector2(playerCollider.size.x, 0.5f), 0, Vector2.zero, 0, LayerMask.GetMask("Ground"));
+        return Physics2D.BoxCast(transform.position + (Vector3.down * playerCollider.size.y / 2), new Vector2(playerCollider.size.x, 0.4f), 0, Vector2.zero, 0, LayerMask.GetMask("Ground", "Slope"));
+
+    }
+
+    public bool IsOnSlope()
+    {
+        //return Physics2D.Raycast(transform.position, Vector2.down, distToGround + 0.05f, LayerMask.GetMask("Ground"));
+        return Physics2D.BoxCast(transform.position + (Vector3.down * playerCollider.size.y / 2), new Vector2(playerCollider.size.x, 0.4f), 0, Vector2.zero, 0, LayerMask.GetMask("Slope"));
 
     }
 
@@ -300,11 +315,11 @@ public class PlayerController : MonoBehaviour
     private bool IsWalled()
     {
         if (_isCrawling)
-            return Physics2D.BoxCast(new Vector2(transform.position.x + (_wallCheckOffset.x * transform.localScale.x), transform.position.y + _wallCheckOffset.y), new Vector2(_wallCheck.x, 0.5f), 0, new Vector2(0, 0), 0, LayerMask.GetMask("Ground"));
+            return Physics2D.BoxCast(new Vector2(transform.position.x + (_wallCheckOffset.x * transform.localScale.x), transform.position.y + _wallCheckOffset.y), new Vector2(_wallCheck.x, 0.5f), 0, new Vector2(0, 0), 0, LayerMask.GetMask("Wall", "Ground"));
         else if (_isCrouching)
-            return Physics2D.BoxCast(new Vector2(transform.position.x + (_wallCheckOffset.x * transform.localScale.x), transform.position.y + _wallCheckOffset.y), new Vector2(_wallCheck.x, 1.1f), 0, new Vector2(0, 0), 0, LayerMask.GetMask("Ground"));
+            return Physics2D.BoxCast(new Vector2(transform.position.x + (_wallCheckOffset.x * transform.localScale.x), transform.position.y + _wallCheckOffset.y), new Vector2(_wallCheck.x, 1.1f), 0, new Vector2(0, 0), 0, LayerMask.GetMask("Wall", "Ground"));
         else
-            return Physics2D.BoxCast(new Vector2(transform.position.x + (_wallCheckOffset.x * transform.localScale.x), transform.position.y + _wallCheckOffset.y), _wallCheck, 0, new Vector2(0, 0), 0, LayerMask.GetMask("Ground"));
+            return Physics2D.BoxCast(new Vector2(transform.position.x + (_wallCheckOffset.x * transform.localScale.x), transform.position.y + _wallCheckOffset.y), _wallCheck, 0, new Vector2(0, 0), 0, LayerMask.GetMask("Wall", "Ground"));
     }
 
     private bool CeilingCheck()
@@ -329,6 +344,7 @@ public class PlayerController : MonoBehaviour
 
             speed = crouchSpeed;
             inputAction.Movement.Jump.Enable();
+            //jumpForce = 25f;
             inputAction.Movement.Shoot.Enable();
             _isCrawling = false;
         }
@@ -363,7 +379,7 @@ public class PlayerController : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.blue;
-        Gizmos.DrawWireCube(transform.position + (Vector3.down * playerCollider.size.y / 2), new Vector2(playerCollider.size.x, 0.5f));
+        Gizmos.DrawWireCube(transform.position + (Vector3.down * playerCollider.size.y / 2), new Vector2(playerCollider.size.x, 0.4f));
         if(_isCrawling)
             Gizmos.DrawWireCube(new Vector2(transform.position.x, transform.position.y + playerCollider.size.y / 2), new Vector2(0.9f, 0.5f));
         else if(_isCrouching)
