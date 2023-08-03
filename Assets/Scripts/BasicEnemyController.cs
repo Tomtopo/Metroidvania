@@ -19,9 +19,8 @@ public class BasicEnemyController : MonoBehaviour
     [SerializeField] private Vector2 _offsetWallCheck;
     [SerializeField] private Vector2 wallCheckSize;
     private float gravityForce = 5f;
-    private int _moveDir;
-    private int _wallCheckRotateVal;
-    private int _groundCheckRotateVal;
+
+
 
     private bool _rotated = false;
 
@@ -33,17 +32,6 @@ public class BasicEnemyController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         _health = GetComponent<Health>();
         _col = GetComponent<Collider2D>();
-        if (movingLeft)
-        {
-            _moveDir = -1;
-            _wallCheckRotateVal = -90;
-            _groundCheckRotateVal = 90;
-            //_offsetGroundCheck.x *= -1;
-            //_offsetWallCheck.x *= -1;
-        }
-        else
-            
-            _moveDir = 1;
     }
 
     // Update is called once per frame

@@ -23,15 +23,19 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float jumpForce = 1f;
     [SerializeField] private float _accelerationOnGround = 50f;
     [SerializeField] private float _accelerationInAir = 10f;
+    [SerializeField] private Vector2 _moveDirection;
     [SerializeField] private bool _isGrounded;
     [SerializeField] private bool _isWalled;
+    [SerializeField] private bool _isOnSlope;
     [SerializeField] private bool _isCrouching = false;
     [SerializeField] private bool _isCrawling = false;
 
     [SerializeField] private float maxVelocity;
     [SerializeField] private Vector2 playerVelocity;
     [SerializeField] private Vector2 _wallCheck = new Vector2(1.2f, 2.5f);
+    [SerializeField] private Vector2 _groundCheck = new Vector2(1f, 0.4f);
     [SerializeField] private Vector2 _wallCheckOffset = new Vector2(0.2f, 0f);
+    [SerializeField] private Vector2 _groundCheckOffset = new Vector2(0f, -1f);
 
     private float coyoteTime = 0.2f;
     [SerializeField] private float coyoteTimeCounter;
@@ -73,9 +77,10 @@ public class PlayerController : MonoBehaviour
         
         // Information
         playerVelocity = rb.velocity;
-        _isGrounded = Physics2D.Raycast(transform.position, Vector2.down, distToGround + 0.1f, LayerMask.GetMask("Ground"));
+        _isGrounded = IsGrounded();
+        _isWalled = IsWalled();
+        _isOnSlope = IsOnSlope();
         //_isWalled = Physics2D.BoxCast(transform.position, new Vector2(1.2f, 1.8f), 0, new Vector2(0,0), 0, LayerMask.GetMask("Ground"));
-
         Flip();
 
         jumpBufferCounter -= Time.deltaTime;
@@ -91,14 +96,8 @@ public class PlayerController : MonoBehaviour
             coyoteTimeCounter -= Time.deltaTime;
         }
 
-        //if(IsOnSlope())
-        //{
-        //    rb.constraints = RigidbodyConstraints2D.FreezePositionX;
-        //    rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-        //}
 
-
-        if(!IsGrounded())
+        if (!IsGrounded())
         {
             _animator.SetBool("Run", false);
             _animator.SetBool("Idle", false);
@@ -116,13 +115,41 @@ public class PlayerController : MonoBehaviour
             _animator.SetBool("Idle", true);
         }
 
+        if(IsOnSlope())
+        {
+            rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
+        }
+        else
+        {
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+        }
+
         Acceleration();
 
 
-        // Moves the player horizontally.
+        // Moves the player.
         if (!IsWalled() && _weapon.turretModeVal == 0)
+        {
             //rb.velocity = new Vector2(moveVal * speed, rb.velocity.y);
-            transform.Translate(new Vector2(speedCounter * Time.deltaTime, 0), Space.World);
+            CalculateTranslationDirection();
+            transform.Translate(new Vector2(_moveDirection.x * speedCounter * Time.deltaTime, _moveDirection.y * speedCounter * Time.deltaTime), Space.World);
+        }
+
+
+    }
+
+    void CalculateTranslationDirection()
+    {
+        if (IsGrounded())
+        {
+            RaycastHit2D ray = Physics2D.Raycast(new Vector2(transform.position.x + transform.localScale.x / 2, transform.position.y), Vector2.down, Mathf.Infinity, LayerMask.GetMask("Ground", "Wall", "Slope"));
+            _moveDirection = ray.normal;
+            _moveDirection = Quaternion.AngleAxis(90f, Vector3.back) * _moveDirection;
+        }
+        else
+        {
+            _moveDirection = new Vector2(1f, 0f);
+        }
 
     }
 
@@ -300,18 +327,18 @@ public class PlayerController : MonoBehaviour
     public bool IsGrounded()
     {
         //return Physics2D.Raycast(transform.position, Vector2.down, distToGround + 0.05f, LayerMask.GetMask("Ground"));
-        return Physics2D.BoxCast(transform.position + (Vector3.down * playerCollider.size.y / 2), new Vector2(playerCollider.size.x, 0.4f), 0, Vector2.zero, 0, LayerMask.GetMask("Ground", "Slope"));
+        return Physics2D.BoxCast(transform.position + (Vector3.down * playerCollider.size.y / 2), new Vector2(playerCollider.size.x, _groundCheck.y), 0, Vector2.zero, 0, LayerMask.GetMask("Ground", "Slope"));
 
     }
 
     public bool IsOnSlope()
     {
         //return Physics2D.Raycast(transform.position, Vector2.down, distToGround + 0.05f, LayerMask.GetMask("Ground"));
-        return Physics2D.BoxCast(transform.position + (Vector3.down * playerCollider.size.y / 2), new Vector2(playerCollider.size.x, 0.4f), 0, Vector2.zero, 0, LayerMask.GetMask("Slope"));
+        return Physics2D.BoxCast(transform.position + (Vector3.down * playerCollider.size.y / 2), new Vector2(playerCollider.size.x, _groundCheck.y), 0, Vector2.zero, 0, LayerMask.GetMask("Slope"));
 
     }
 
-    // Is player facing a wall? If the player is crouching, shrink the box size accouring to the collider.
+    // Is player facing a wall? If the player is crouching or crawling, shrink the box size accouring to the collider.
     private bool IsWalled()
     {
         if (_isCrawling)
@@ -319,7 +346,7 @@ public class PlayerController : MonoBehaviour
         else if (_isCrouching)
             return Physics2D.BoxCast(new Vector2(transform.position.x + (_wallCheckOffset.x * transform.localScale.x), transform.position.y + _wallCheckOffset.y), new Vector2(_wallCheck.x, 1.1f), 0, new Vector2(0, 0), 0, LayerMask.GetMask("Wall", "Ground"));
         else
-            return Physics2D.BoxCast(new Vector2(transform.position.x + (_wallCheckOffset.x * transform.localScale.x), transform.position.y + _wallCheckOffset.y), _wallCheck, 0, new Vector2(0, 0), 0, LayerMask.GetMask("Wall", "Ground"));
+            return Physics2D.BoxCast(new Vector2(transform.position.x + (_wallCheckOffset.x * transform.localScale.x), transform.position.y + _wallCheckOffset.y), new Vector2(_wallCheck.x, _wallCheck.y), 0, new Vector2(0, 0), 0, LayerMask.GetMask("Wall", "Ground"));
     }
 
     private bool CeilingCheck()
@@ -330,7 +357,7 @@ public class PlayerController : MonoBehaviour
             return Physics2D.BoxCast(new Vector2(transform.position.x, transform.position.y + playerCollider.size.y / 2), new Vector2(0.9f, 0.5f), 0, new Vector2(0, 0), 0, LayerMask.GetMask("Ground"));
     }
 
-    // Enumerator to standing up from crouching position. Enlarges player collider size step by step. Without might cause clipping into ground when doing in certain poitions.
+    // Enumerator to standing up from crouching position. Enlarges player collider size step by step. Without might cause clipping into ground when doing in certain positions.
     public IEnumerator RiseUp()
     {
         if (_isCrawling && !CeilingCheck())
@@ -378,8 +405,10 @@ public class PlayerController : MonoBehaviour
 
     private void OnDrawGizmos()
     {
+        Gizmos.color = Color.green;
+        Gizmos.DrawLine(new Vector2(transform.position.x + transform.localScale.x / 2, transform.position.y), new Vector2(transform.position.x + transform.localScale.x / 2, transform.position.y - 20f));
         Gizmos.color = Color.blue;
-        Gizmos.DrawWireCube(transform.position + (Vector3.down * playerCollider.size.y / 2), new Vector2(playerCollider.size.x, 0.4f));
+        Gizmos.DrawWireCube(transform.position + (Vector3.down * playerCollider.size.y / 2), new Vector2(playerCollider.size.x, _groundCheck.y));
         if(_isCrawling)
             Gizmos.DrawWireCube(new Vector2(transform.position.x, transform.position.y + playerCollider.size.y / 2), new Vector2(0.9f, 0.5f));
         else if(_isCrouching)
@@ -387,11 +416,11 @@ public class PlayerController : MonoBehaviour
         Gizmos.color = Color.yellow;
         // Draw wallcheck gizmos.
         if(_isCrawling)
-            Gizmos.DrawWireCube(new Vector2(transform.position.x + (_wallCheckOffset.x * transform.localScale.x), transform.position.y + _wallCheckOffset.y), new Vector2(_wallCheck.x, 0.5f));
+            Gizmos.DrawWireCube(new Vector2(transform.position.x + (_wallCheckOffset.x * transform.localScale.x), transform.position.y + _wallCheckOffset.y), new Vector2(_wallCheck.x, 0.45f));
         else if (_isCrouching)
-            Gizmos.DrawWireCube(new Vector2(transform.position.x + (_wallCheckOffset.x * transform.localScale.x), transform.position.y + _wallCheckOffset.y), new Vector2(_wallCheck.x, 1.1f));
+            Gizmos.DrawWireCube(new Vector2(transform.position.x + (_wallCheckOffset.x * transform.localScale.x), transform.position.y + _wallCheckOffset.y), new Vector2(_wallCheck.x, 1f));
         else
-            Gizmos.DrawWireCube(new Vector2(transform.position.x + (_wallCheckOffset.x * transform.localScale.x), transform.position.y + _wallCheckOffset.y), new Vector3(_wallCheck.x, _wallCheck.y, 0));
+            Gizmos.DrawWireCube(new Vector2(transform.position.x + (_wallCheckOffset.x * transform.localScale.x), transform.position.y + _wallCheckOffset.y), new Vector2(_wallCheck.x, _wallCheck.y));
     }
 
 }
