@@ -9,7 +9,6 @@ public class PlayerHealth : MonoBehaviour
     public bool invincibilityFrames = false;
     private Rigidbody2D _rb;
     public GameObject _lastDamageSource;
-    public float damageForce;
 
     private void Start()
     {
@@ -17,7 +16,7 @@ public class PlayerHealth : MonoBehaviour
         _rb = GetComponent<Rigidbody2D>();
     }
 
-    public void TakeDamage(float dmgAmount, GameObject damageSource)
+    public void TakeDamage(float dmgAmount, GameObject damageSource, float damageForce)
     {
         _lastDamageSource = damageSource;
         if (!invincibilityFrames)
@@ -28,7 +27,7 @@ public class PlayerHealth : MonoBehaviour
                 Die();
             }
             else
-                StartCoroutine(Damaged());
+                StartCoroutine(Damaged(damageForce));
         }
     }
 
@@ -42,7 +41,7 @@ public class PlayerHealth : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private IEnumerator Damaged()
+    private IEnumerator Damaged(float damageForce)
     {
         _rb.AddForce((gameObject.transform.position - _lastDamageSource.transform.position).normalized * damageForce, ForceMode2D.Impulse);
         invincibilityFrames = true;

@@ -8,6 +8,7 @@ public class BasicEnemyController : MonoBehaviour
 {
     [SerializeField] private float _speed;
     [SerializeField] private float _strength;
+    [SerializeField] private float _knockback = 10f;
     [SerializeField] private float _gravityForce;
     private Health _health;
     private Rigidbody2D rb;
@@ -92,7 +93,7 @@ public class BasicEnemyController : MonoBehaviour
         }
         if(CollidedWithPlayer())
         {
-            GameObject.Find("Player").GetComponent<PlayerHealth>().TakeDamage(_strength, gameObject);
+            GameObject.Find("Player").GetComponent<PlayerHealth>().TakeDamage(_strength, gameObject, _knockback);
         }
 
 
@@ -166,7 +167,7 @@ public class BasicEnemyController : MonoBehaviour
 
         if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
-            collision.collider.gameObject.GetComponent<PlayerHealth>().TakeDamage(_strength, gameObject);
+            collision.collider.gameObject.GetComponent<PlayerHealth>().TakeDamage(_strength, gameObject, _knockback);
         }
     }
 
@@ -179,7 +180,7 @@ public class BasicEnemyController : MonoBehaviour
 
         if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
-            collision.gameObject.GetComponent<PlayerHealth>().TakeDamage(_strength, gameObject);
+            collision.gameObject.GetComponent<PlayerHealth>().TakeDamage(_strength, gameObject, _knockback);
 }
     }
 

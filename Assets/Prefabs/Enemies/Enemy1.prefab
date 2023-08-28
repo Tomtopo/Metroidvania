@@ -102,6 +102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 6
   _strength: 1
+  _knockback: 10
   _gravityForce: 6
   isJustInstantiated: 1
   _offsetGroundCheck: {x: -0.2, y: 0.45}

@@ -7,39 +7,65 @@ public class BossOneController : MonoBehaviour
 {
     public Transform target;
     private Rigidbody2D _rb;
+    private BossHealth _health;
     [SerializeField] private BoxCollider2D _bossCollider;
 
     [SerializeField] private Vector2 _groundCheck;
 
 
     [SerializeField] private float _strength = 5f;
+    [SerializeField] private float _knockback = 15f;
     [SerializeField] private float _moveSpeed = 10f;
     [SerializeField] private float _jumpHeight = 10f;
     [SerializeField] private float _phase = 1f;
     [SerializeField] private float _jumpTime = 0f;
+    [SerializeField] private float _angle;
 
     [SerializeField] private bool _movingRight = true;
     [SerializeField] private bool _moving = false;
     [SerializeField] private bool _coroutineIsRunning;
-
+    [SerializeField] private string _case = "Move";
 
     // Start is called before the first frame update
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();   
         _bossCollider = GetComponent<BoxCollider2D>();
+        _health = GetComponent<BossHealth>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(!_coroutineIsRunning)
-        {
-            //Move();
-            //Flip();
-            Jump();
-        }
+        if (_health.health <= 0)
+            StopAllCoroutines();
 
+        Flip();
+        if (!_coroutineIsRunning)
+        {
+            switch (_case)
+            {
+                case "Move":
+                    Move();
+                    break;
+
+                case "Jump":
+                    Jump();
+                    break;
+
+                case "ShootLaser":
+                    ShootLaser();
+                    break;
+
+                default:
+                    _case = "Move";
+                    return;
+            }
+        }
+        if (CollidedWithPlayer())
+        {
+            GameObject.Find("Player").GetComponent<PlayerHealth>().TakeDamage(_strength, gameObject, _knockback);
+        }
     }
 
     private void Move()
@@ -55,12 +81,17 @@ public class BossOneController : MonoBehaviour
             StartCoroutine(Jumping());
     }
 
+    private void ShootLaser()
+    {
+        StartCoroutine(LaserBeam());
+    }
+
     private void Flip()
     {
-        if (_movingRight)
-            transform.localScale = new Vector2(5, transform.localScale.y);
-        else
-            transform.localScale = new Vector2(-5, transform.localScale.y);
+        Vector2 vectorToPlayer = target.transform.position - transform.position;
+        _angle = Vector2.Angle(transform.right, vectorToPlayer);
+        if (_angle > 90f && !_coroutineIsRunning)
+            StartCoroutine(TurnTowardsThePlayer());
     }
 
     public bool IsGrounded()
@@ -68,14 +99,35 @@ public class BossOneController : MonoBehaviour
         return Physics2D.BoxCast(transform.position + (Vector3.down * (_bossCollider.size.y * transform.localScale.x) / 2), new Vector2(_bossCollider.size.x * transform.localScale.x, _groundCheck.y), 0, Vector2.zero, 0, LayerMask.GetMask("Ground", "Slope"));
     }
 
+    private bool CollidedWithPlayer()
+    {
+        return Physics2D.BoxCast(transform.position, _bossCollider.bounds.size, 0, new Vector2(0, 0), 0, LayerMask.GetMask("Player"));
+    }
+
+    private IEnumerator TurnTowardsThePlayer()
+    {
+        _coroutineIsRunning = true;
+        _case = "Turn";
+        yield return new WaitForSeconds(1f);
+        transform.Rotate(0f, 180f, 0f);
+        _movingRight = !_movingRight;
+        yield return new WaitForSeconds(1f);
+        _coroutineIsRunning = false;
+        _case = "ShootLaser";
+    }
+
     private IEnumerator MoveOneStep()
     {
         _coroutineIsRunning = true;
         _moving = true;
-        transform.Translate(new Vector2(_moveSpeed * transform.localScale.x * Time.deltaTime, 0), Space.World);
-        yield return new WaitForSeconds(1f);
+        for(int i = Random.Range(0, 3); i < 4; i++)
+        {
+            transform.Translate(new Vector2(_moveSpeed * transform.right.x * Time.deltaTime, 0), Space.World);
+            yield return new WaitForSeconds(1f);
+        }
         _moving = false;
         _coroutineIsRunning = false;
+        _case = "Jump";
     }
 
     private IEnumerator Jumping()
@@ -101,7 +153,50 @@ public class BossOneController : MonoBehaviour
         _jumpTime = 0f;
         yield return new WaitForSeconds(1f);
         _coroutineIsRunning = false;
+        _case = "Move";
+    }
 
+    private IEnumerator LaserBeam()
+    {
+        _coroutineIsRunning = true;
+        yield return new WaitForSeconds(2f);
+        transform.GetChild(2).gameObject.SetActive(true);
+        if(Physics2D.BoxCast(new Vector2(transform.position.x + transform.right.x * 15f, transform.position.y), new Vector2(30f, 2f), 0, new Vector2(0, 0), 0, LayerMask.GetMask("Player")))
+        {
+            GameObject.Find("Player").GetComponent<PlayerHealth>().TakeDamage(_strength, gameObject, _knockback);
+            yield return new WaitForSeconds(0.2f);
+        }
+        transform.GetChild(2).gameObject.SetActive(false);
+        yield return new WaitForSeconds(1f);
+        _coroutineIsRunning = false;
+        _case = "Move";
+
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.gameObject.layer == LayerMask.NameToLayer("PlayerProjectile") && _health.health > 0f)
+        {
+            _health.TakeDamage(1f);
+        }
+
+        if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Player"))
+        {
+            collision.collider.gameObject.GetComponent<PlayerHealth>().TakeDamage(_strength, gameObject, _knockback);
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.collider.gameObject.layer == LayerMask.NameToLayer("PlayerProjectile") && _health.health > 0f)
+        {
+            _health.TakeDamage(1f);
+        }
+
+        if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Player"))
+        {
+            collision.collider.gameObject.GetComponent<PlayerHealth>().TakeDamage(_strength, gameObject, _knockback);
+        }
     }
 
     private void OnDrawGizmos()
